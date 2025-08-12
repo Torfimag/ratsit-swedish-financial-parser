@@ -1,0 +1,10 @@
+name,address,postal_code,area_name,age,income_year,salary_rank,payment_remarks,salary,capital
+Persson Ann,Lovisedalsvägen,186 53,Vallentuna,100,2027,725,False,0,0
+Henriksson Molly,Stugvägen,167 72,Bromma,18,2020,0,False,0,0
+Luhr Johanna,Stugvägen,167 72,Bromma,40,2025,0,False,0,0
+Westerlund Ingalis Gunilla,,167 72,Bromma,100,2021,205,False,0,0
+Löfbom Bengt-Ove Mikael,Såningsvägen,175 52,Järfälla,76,2023,0,False,0,0
+Nelin Ulrika Maria,Såningsvägen,175 52,Järfälla,100,2021,661,False,0,0
+Bergman Mikael,Strålgatan,112 62,Stockholm,100,2026,687,False,0,0
+Brezina Kerstin,Strålgatan,112 62,Stockholm,42,2025,0,False,0,0
+Forsberg Iris Hautaniemi,,118 46,Stockholm,100,2027,0,False,0,0

@@ -1,0 +1,623 @@
+name,address,postal_code,area_name,age,income_year,salary_rank,payment_remarks,salary,capital
+Stein Gunilla,Skogsåsvägen,186 53,Vallentuna,53,2023,786,False,360,0
+Stenlund Julia,Tallkottestigen,186 53,Vallentuna,31,2024,686,False,475,0
+Stenudd Carita,Gläntastigen,186 53,Vallentuna,53,2024,57,False,1,0
+Steorn Erika,Gläntastigen,186 53,Vallentuna,44,2023,720,False,435,0
+Sterner Agneta,Lovisedalshöjden,186 53,Vallentuna,66,2024,761,False,396,0
+Sterner Göran,Lovisedalshöjden,186 53,Vallentuna,68,2024,555,False,579,0
+Sterner Niklas,Hällmarksvägen,186 53,Vallentuna,49,2024,220,False,901,0
+Sterner Oliver,Lovisedalshöjden,186 53,Vallentuna,28,2024,989,False,66,0
+Stigström Suzanne,Hällmarksvägen,186 53,Vallentuna,48,2024,535,False,598,0
+Stigström Toni,Hällmarksvägen,186 53,Vallentuna,49,2023,287,False,803,0
+Stoor Marie,Tallkottestigen,186 53,Vallentuna,65,2024,452,False,651,0
+Stoor Micael,Tallkottestigen,186 53,Vallentuna,63,2024,382,False,712,0
+Strandh Karin,Tallkottestigen,186 53,Vallentuna,34,2024,634,False,506,0
+Stribeck Ann-Charlotte Elisabeth,Lovisedal…,186 53,Vallentuna,76,2024,893,False,233,0
+Strindberg Johan,Ängsstigen,186 53,Vallentuna,42,2024,889,False,239,0
+Ström Monica,Uthamravägen,186 53,Vallentuna,74,2024,678,False,480,0
+Strömander Inger,Hällmarksvägen,186 53,Vallentuna,57,2024,572,False,561,0
+Strömander Jens,Hällmarksvägen,186 53,Vallentuna,57,2024,629,False,509,0
+Strömander Leo,Hällmarksvägen,186 53,Vallentuna,17,2024,1050,False,0,0
+Strömander Lukas,Hällmarksvägen,186 53,Vallentuna,20,2023,1043,False,8,0
+Strömbäck Ingrid,Skogsåsvägen,186 53,Vallentuna,60,2024,72,False,1,0
+Strömbäck Thor,Skogsåsvägen,186 53,Vallentuna,23,2024,955,False,145,0
+Ståhlbrandt Erik,Gläntastigen,186 53,Vallentuna,46,2024,233,False,877,0
+Ståhlnacke Hanna,Skogsåsvägen,186 53,Vallentuna,37,2024,478,False,631,0
+Ståhlnacke Marcus,Skogsåsvägen,186 53,Vallentuna,44,2024,409,False,689,0
+Sundin Meta,Lovisedalsslingan,186 53,Vallentuna,59,2024,330,False,762,0
+Sundqvist Ann,Uthamravägen,186 53,Vallentuna,68,2024,430,False,675,0
+Sundqvist Gunnar,Uthamravägen,186 53,Vallentuna,71,2024,27,False,1,0
+Sundström Benny,Uthamravägen,186 53,Vallentuna,48,2024,716,False,444,0
+Sunnanängs Johan Strid,Barkstigen,186 53,Vallentuna,40,2023,500,False,615,0
+Svanberg Alvin,Hällmarksvägen,186 53,Vallentuna,20,2024,908,False,209,0
+Svanberg Axel,Hällmarksvägen,186 53,Vallentuna,16,2024,1050,False,0,0
+Svanberg Cecilia,Hällmarksvägen,186 53,Vallentuna,52,2024,855,False,280,0
+Svaneby Magnus,Skogsåsvägen,186 53,Vallentuna,44,2023,192,False,948,0
+Svaneby Margareta,Skogsåsvägen,186 53,Vallentuna,45,2024,24,False,1,0
+Svedberg Henrik,Gläntastigen,186 53,Vallentuna,51,2024,540,False,595,0
+Svensk Karin,Gläntastigen,186 53,Vallentuna,58,2024,629,False,509,0
+Svensk Kenneth Lars-Ove,Gläntastigen,186 53,Vallentuna,59,2024,445,False,656,0
+Svensson Emil,Uthamravägen,186 53,Vallentuna,42,2023,83,True,1,0
+Svensson Henrik Svante,Blockstigen,186 53,Vallentuna,41,2023,538,False,597,0
+Svensson Ylva Höglund,Uthamravägen,186 53,Vallentuna,69,2024,594,False,539,0
+Svärd Ingrid Elisabeth Irene,Lovisedalshöj…,186 53,Vallentuna,78,2024,935,False,183,0
+Svärd Johnny,Gläntastigen 163 lgh,186 53,Vallentuna,32,2024,945,False,159,0
+Svärd Lars-Erik,Lovisedalshöjden,186 53,Vallentuna,81,2024,775,False,381,0
+Sälgblad Christina,Barkstigen,186 53,Vallentuna,62,2024,627,False,510,0
+Söderin Carl Andreas,Lovisedalsslingan,186 53,Vallentuna,45,2024,518,False,608,0
+Söderlund Frida,Hällmarksvägen,186 53,Vallentuna,33,2024,747,False,409,0
+Söderlund Kenneth Patrik,Skogsåsvägen,186 53,Vallentuna,56,2024,860,False,275,0
+Söderlund Nadine,Skogsåsvägen,186 53,Vallentuna,18,2024,1050,False,0,0
+Söderström Mikael,Barrskogsvägen,186 53,Vallentuna,56,2024,226,False,891,0
+Söderström Teo,Barrskogsvägen,186 53,Vallentuna,22,2024,1050,False,0,0
+Sörén Leif Arne Roland,Lovisedalsslingan,186 53,Vallentuna,81,2024,881,False,247,0
+Tabasi Behrang,Uthamravägen,186 53,Vallentuna,44,2024,321,False,774,0
+Taberman Anna,Gläntastigen,186 53,Vallentuna,55,2024,713,False,446,0
+Taberman Clara,Gläntastigen,186 53,Vallentuna,20,2024,1006,False,40,0
+Taghizadeh Monemi Goli,Blockstigen,186 53,Vallentuna,49,2024,643,False,501,0
+Tamilin Anton,Tallkottestigen,186 53,Vallentuna,43,2024,3,False,3,0
+Tamilina Anna,Tallkottestigen,186 53,Vallentuna,38,2024,755,True,401,0
+Tanveer Binish,Blockstigen,186 53,Vallentuna,46,2023,472,False,637,0
+Tapper Lars Jonas Alexander,Soldatvägen,186 53,Vallentuna,51,2024,115,False,1,0
+Tapper William,Soldatvägen,186 53,Vallentuna,19,2024,973,False,100,0
+Tawfique Katan,Uthamravägen,186 53,Vallentuna,18,2024,1023,False,25,0
+Tawfique Kozar,Uthamravägen,186 53,Vallentuna,48,2024,61,False,1,0
+Tehranian Hooman,Blockstigen,186 53,Vallentuna,61,2024,139,False,1,0
+Tehranian Nima,Blockstigen,186 53,Vallentuna,18,2024,1050,False,0,0
+Teiwik Emma,Ängsstigen,186 53,Vallentuna,42,2024,324,False,769,0
+Teiwik Peter,Ängsstigen,186 53,Vallentuna,42,2024,283,False,814,0
+Theander Anna,Soldatvägen,186 53,Vallentuna,50,2024,198,False,936,0
+Theander Carl Theodor Sebastian,Soldatvä…,186 53,Vallentuna,47,2024,516,False,610,0
+Theander Nellie,Soldatvägen,186 53,Vallentuna,17,2024,1050,False,0,0
+Thorling Linda,Uthamravägen,186 53,Vallentuna,53,2024,241,False,865,0
+Thorling Magnus,Uthamravägen,186 53,Vallentuna,54,2024,20,False,1,0
+Thorling Sandra Evelyn,Uthamravägen,186 53,Vallentuna,21,2024,991,False,62,0
+Thunborg Karin,Hällmarksvägen,186 53,Vallentuna,61,2024,168,False,984,0
+Thunström Carl-Michael Roland,Hasselud…,186 53,Vallentuna,50,2024,852,False,281,0
+Thörnqvist Carin,Ängsstigen,186 53,Vallentuna,56,2024,439,False,666,0
+Thörnqvist Tomas,Ängsstigen,186 53,Vallentuna,60,2023,447,False,655,0
+Thörnvall Peter,Gläntastigen,186 53,Vallentuna,61,2024,798,False,344,0
+Tillberg Amanda Holde,Uthamravägen,186 53,Vallentuna,25,2024,848,False,283,0
+Tjärnström Carl Johan,Blockstigen,186 53,Vallentuna,33,2024,254,False,851,0
+Tjärnström Julia,Blockstigen,186 53,Vallentuna,33,2024,567,False,568,0
+Tobell Lars,Uthamravägen,186 53,Vallentuna,56,2024,131,False,1,0
+Toivola Eija,Uthamravägen,186 53,Vallentuna,65,2024,780,False,366,0
+Toivonen Jakob,Hällmarksvägen,186 53,Vallentuna,36,2024,199,False,935,0
+Tornefors Erik Olof Algot,Barrskogsvägen,186 53,Vallentuna,46,2024,903,False,220,0
+Tornefors Kerstin Inger Marianne,Barrsko…,186 53,Vallentuna,75,2023,905,False,217,0
+Tornefors Olof Christer,Barrskogsvägen,186 53,Vallentuna,77,2023,10,False,2,0
+Torstensdotter Linn,Gläntastigen,186 53,Vallentuna,43,2024,253,False,851,0
+Trotzig Ellen,Hasseluddsvägen,186 53,Vallentuna,16,2024,1050,False,0,0
+Trotzig Jesper,Hasseluddsvägen,186 53,Vallentuna,53,2023,74,False,1,0
+Trotzig Karin Liljeberg,Hasseluddsvägen,186 53,Vallentuna,48,2024,475,False,633,0
+Tsirampidis Georgios,Tallkottestigen,186 53,Vallentuna,57,2024,825,False,310,0
+Tuominen Gilbert,Uthamravägen,186 53,Vallentuna,68,2024,958,False,139,0
+Turner Gergana,Gläntastigen,186 53,Vallentuna,48,2024,372,False,723,0
+Tuyisenge Denise,Lovisedalsslingan,186 53,Vallentuna,32,2024,1013,False,36,0
+Tånneryd Angelica Eleonor,Barrskogsväge…,186 53,Vallentuna,50,2024,490,False,621,0
+Tånneryd Måns,Barrskogsvägen,186 53,Vallentuna,56,2024,463,False,644,0
+Tölli Anna,Gläntastigen,186 53,Vallentuna,65,2023,35,False,1,0
+Tölli Oskar,Gläntastigen,186 53,Vallentuna,28,2024,1016,False,35,0
+Tönne Sophia,Uthamravägen,186 53,Vallentuna,54,2024,377,False,718,0
+Töyrä Elin,Gläntastigen,186 53,Vallentuna,17,2024,1050,False,0,0
+Uppgren Anneli,Gläntastigen,186 53,Vallentuna,48,2024,790,False,358,0
+Ursin Nicklas,Skogsåsvägen,186 53,Vallentuna,48,2024,119,False,1,0
+Uttergård Caroline,Barkstigen,186 53,Vallentuna,40,2024,839,False,294,0
+Uwira Robert,Hällmarksvägen,186 53,Vallentuna,37,2024,36,False,1,0
+Vadi Helgi Maria,Gläntastigen 163 lgh,186 53,Vallentuna,71,2024,959,False,139,0
+Vahdat Shariat Panahi Aida,Ängsstigen,186 53,Vallentuna,42,2024,857,False,277,0
+Valdmanis Davis,Hällmarksvägen 40 bv,186 53,Vallentuna,26,2023,1050,False,0,0
+Vapper Lars Voldemar,Lovisedalsvägen,186 53,Vallentuna,77,2024,806,False,334,0
+Vedin Gun Margareta,Gläntastigen,186 53,Vallentuna,88,2024,845,False,290,0
+Vedin Tord Henry,Gläntastigen,186 53,Vallentuna,88,2024,481,False,629,0
+Vestlund Desirée,Hasseluddsvägen,186 53,Vallentuna,37,2024,693,False,468,0
+Vestlund Ludvig,Hasseluddsvägen,186 53,Vallentuna,43,2024,329,False,763,0
+Viberg Ulrika,Uthamravägen,186 53,Vallentuna,63,2024,511,False,613,0
+Videhall Linda,Blockstigen,186 53,Vallentuna,48,2024,101,False,1,0
+Videhall Petter,Blockstigen,186 53,Vallentuna,48,2024,617,False,516,0
+Vik Helena,Gläntastigen,186 53,Vallentuna,57,2024,480,False,630,0
+Vik Mikael,Gläntastigen,186 53,Vallentuna,58,2024,91,False,1,0
+Vikström Erik,Hällmarksvägen,186 53,Vallentuna,48,2024,170,False,978,0
+Vikström Sanna,Hällmarksvägen,186 53,Vallentuna,49,2024,505,False,615,0
+Viktorsson Magnus,Lovisedalsslingan,186 53,Vallentuna,37,2024,176,False,968,0
+Volin Carola,Soldatvägen,186 53,Vallentuna,69,2024,500,False,615,0
+Voltaire Kajsa Anderson,Gläntastigen,186 53,Vallentuna,37,2024,631,False,508,0
+Waginder Thomas,Uthamravägen,186 53,Vallentuna,65,2024,595,True,539,0
+Wahlin Thore,Uthamravägen,186 53,Vallentuna,60,2024,288,False,801,0
+Waljanson Alexander,Ängsstigen,186 53,Vallentuna,43,2024,578,False,555,0
+Waljanson Michaela,Ängsstigen,186 53,Vallentuna,42,2024,365,False,734,0
+Wallin Hanna,Hällmarksvägen,186 53,Vallentuna,51,2024,31,False,1,0
+Wallin Patrik,Hällmarksvägen,186 53,Vallentuna,53,2024,17,False,2,0
+Ward Anna Sandström,Uthamravägen,186 53,Vallentuna,62,2024,717,False,440,0
+Nilsson Cecilia,Djupdalsvägen,167 72,Bromma,60,2023,70,False,967,0
+Nilsson Erik,Djupdalsvägen,167 72,Bromma,59,2023,28,False,1,0
+Nilsson Marcus,Tapetserarvägen,167 72,Bromma,49,2023,116,False,780,0
+Nilsson Markus,Djupdalsvägen,167 72,Bromma,24,2023,348,False,122,0
+Nilsson Sven Åke Willy,Tapetserarvägen,167 72,Bromma,83,2023,297,False,319,0
+Norberg Hans Åke,Tapetserarvägen,167 72,Bromma,80,2023,337,False,189,0
+Norberg Ingrid Gunilla Elisabeth Trägårdh,…,167 72,Bromma,77,2023,335,False,192,0
+Nordfors Johanna Möllerberg,Djupdalsväg…,167 72,Bromma,54,2023,61,False,1,0
+Nordfors Lars Kristian Axel,Djupdalsvägen,167 72,Bromma,55,2022,44,False,1,0
+Nordman Helena,Drakstigen,167 72,Bromma,50,2023,139,False,715,0
+Nordström Gabriel,Tapetserarvägen,167 72,Bromma,38,2023,101,False,849,0
+Nordström Viola,Tapetserarvägen,167 72,Bromma,18,2023,381,False,0,0
+Nyberg Ann,Kvistbacken,167 72,Bromma,71,2023,313,False,263,0
+Nyberg Johnny,Kvistbacken,167 72,Bromma,72,2023,263,False,421,0
+Nygren Anders,Tapetserarvägen,167 72,Bromma,43,2023,25,False,1,0
+Nygren Eva Margareta,Västerled,167 72,Bromma,81,2023,301,False,309,0
+Oddner Tatiana,Djupdalsvägen,167 72,Bromma,70,2022,234,False,521,0
+Olsson Ann Beatrice,Djupdalsvägen,167 72,Bromma,45,2022,252,False,443,0
+Olsson Carl Niklas,Kvistbacken,167 72,Bromma,52,2023,91,False,905,0
+Olsson Hugo,Kvistbacken,167 72,Bromma,16,2023,381,False,0,0
+Persson Christer,Tapetserarvägen,167 72,Bromma,54,2023,184,False,610,0
+Pethrus Engström Ludwig,Djupdalsvägen,167 72,Bromma,34,2023,159,False,660,0
+Pethrus Engström Matilda,Djupdalsvägen,167 72,Bromma,35,2023,269,False,406,0
+Pettersson Eva Margareta,Djupdalsvägen,167 72,Bromma,75,2023,278,False,382,0
+Pettersson Fredrik,Västerled,167 72,Bromma,52,2023,35,False,1,0
+Poijes Nils Ivar Konstantin,Djupdalsvägen…,167 72,Bromma,67,2023,283,False,373,0
+Pulkkinen Laura Maarit,Västerled,167 72,Bromma,35,2023,193,False,601,0
+Rasmusson Maria,Djupdalsvägen,167 72,Bromma,38,2023,340,False,174,0
+Rasmusson Philip,Djupdalsvägen,167 72,Bromma,37,2023,329,False,200,0
+Redmond Niall Anthony,Tapetserarvägen,167 72,Bromma,47,2023,150,False,699,0
+Reuterborg Hanna,Stugvägen,167 72,Bromma,52,2023,71,False,962,0
+Ribbing Ebba,Kvistbacken,167 72,Bromma,28,2023,381,False,0,0
+Ribbing Åsa,Kvistbacken,167 72,Bromma,59,2023,187,False,608,0
+Richloow Lars,Gustav III:s väg,167 72,Bromma,60,2023,94,False,892,0
+Rickman Annaqie,Djupdalsvägen,167 72,Bromma,55,2022,217,True,552,0
+Rid Emil Nordman,Drakstigen,167 72,Bromma,18,2023,380,False,4,0
+Rid Isak Nordman,Drakstigen,167 72,Bromma,21,2022,357,False,60,0
+Rid Johannes,Drakstigen,167 72,Bromma,53,2023,13,False,2,0
+Ringstedt Anders,Stugvägen,167 72,Bromma,38,2023,100,False,857,0
+Ringstedt Eva-Ulrica,Stugvägen,167 72,Bromma,39,2023,104,False,831,0
+Ringstedt Thomas,Djupdalsvägen,167 72,Bromma,60,2023,218,False,552,0
+Romell Jonas,Stugvägen,167 72,Bromma,31,2023,362,False,47,0
+Romell Tomas Erik,Stugvägen,167 72,Bromma,70,2022,270,False,403,0
+Rudbo Birgitta,Åkerslundsgatan,167 72,Bromma,58,2023,180,False,616,0
+Ruthner Christian,Stugvägen,167 72,Bromma,84,2023,248,False,453,0
+Ruthner Gunilla Elisabeth,Stugvägen,167 72,Bromma,81,2023,345,False,135,0
+Rydeberg Martin,Stugvägen,167 72,Bromma,63,2023,276,False,390,0
+Röjemo Bo Robert,Gökvägen,167 72,Bromma,82,2023,26,False,1,0
+Röjemo Kristina,Gökvägen,167 72,Bromma,68,2023,245,False,476,0
+Sandberg Anna,Västerled,167 72,Bromma,40,2023,353,False,71,0
+Sandberg Janelle,Djupdalsvägen,167 72,Bromma,42,2023,381,False,0,0
+Sandberg Kristoffer,Västerled,167 72,Bromma,37,2023,14,False,2,0
+Sandberg Oscar,Djupdalsvägen,167 72,Bromma,39,2023,32,False,1,0
+Sandell Eva,Gökvägen,167 72,Bromma,79,2023,325,False,211,0
+Sandell Nils Alex,Gökvägen,167 72,Bromma,80,2023,278,False,382,0
+Sandström Monica,Gökvägen,167 72,Bromma,59,2023,152,False,689,0
+Sarisoy Suzan,Djupdalsvägen,167 72,Bromma,60,2023,331,False,198,0
+Schaefer Karin,Stugvägen,167 72,Bromma,52,2023,246,False,474,0
+Schlyter Annika Stööp,Drakstigen,167 72,Bromma,66,2023,37,False,1,0
+Schlyter Carl Johan,Drakstigen,167 72,Bromma,67,2023,199,False,592,0
+Schlyter Carl Olof,Djupdalsvägen,167 72,Bromma,64,2023,114,False,783,0
+Schlyter Maria Backteman,Djupdalsvägen…,167 72,Bromma,63,2023,255,False,433,0
+Sehlin Mikael,Tapetserarvägen,167 72,Bromma,45,2022,239,False,505,0
+Selander Hannes,Stugvägen,167 72,Bromma,16,2023,381,False,0,0
+Seyer Elna,Västerled,167 72,Bromma,27,2022,355,False,65,0
+Silvendoin Bambi Orvokki,Tapetserarväge…,167 72,Bromma,39,2023,190,False,603,0
+Sjöman Cecilia,Tapetserarvägen,167 72,Bromma,47,2023,113,False,787,0
+Sollander Sven Erik Axel,Djupdalsvägen,167 72,Bromma,84,2023,289,False,351,0
+Sporrong Anna Carolina Emelie,Västerled,167 72,Bromma,43,2023,145,False,707,0
+Staaf Katarina,Stugvägen,167 72,Bromma,57,2023,2,False,3,0
+Staaf Kent,Stugvägen,167 72,Bromma,58,2023,130,False,726,0
+Steijer Katarina,Djupdalsvägen,167 72,Bromma,34,2023,157,False,670,0
+Strandberg Anita Hedman,Djupdalsvägen,167 72,Bromma,69,2023,309,False,290,0
+Strandberg Åke Gunnar,Djupdalsvägen,167 72,Bromma,69,2023,225,False,533,0
+Ströman Victor Hoas,Västerled,167 72,Bromma,42,2023,47,False,1,0
+Strömberg Ann-Charlotte,Drakstigen,167 72,Bromma,67,2023,219,False,548,0
+Strömberg Mikael,Drakstigen,167 72,Bromma,69,2022,67,False,982,0
+Strömgård Björn,Drakstigen,167 72,Bromma,47,2023,122,False,753,0
+Strömgård Jenny,Drakstigen,167 72,Bromma,45,2023,330,False,199,0
+Stålberg Agensjö Katharina,Stugvägen,167 72,Bromma,63,2023,182,False,615,0
+Sundling Agneta Marie,Kojgränd,167 72,Bromma,68,2023,320,False,240,0
+Sundling Nils Mikael,Kojgränd,167 72,Bromma,69,2023,308,False,291,0
+Svahn Caroline,Västerled,167 72,Bromma,38,2023,349,False,118,0
+Svahn Gustav,Västerled,167 72,Bromma,39,2023,51,False,1,0
+Svensson Ann-Charlotte Fristorp,Stugväge…,167 72,Bromma,75,2023,165,False,644,0
+Svensson Bengt Hugo,Djupdalsvägen,167 72,Bromma,89,2023,347,False,130,0
+Svensson Sven Börje,Stugvägen,167 72,Bromma,81,2022,195,False,599,0
+Svärd Axel,Åkerslundsgatan,167 72,Bromma,16,2023,381,False,0,0
+Svärd David,Åkerslundsgatan,167 72,Bromma,43,2023,38,False,1,0
+Svärd Désirée,Åkerslundsgatan,167 72,Bromma,42,2023,197,False,597,0
+Söderqvist Agnes,Västerled,167 72,Bromma,26,2023,262,False,422,0
+Tejme Hans Torsten,Västerled,167 72,Bromma,81,2023,324,False,225,0
+Thermaenius Aron,Västerled,167 72,Bromma,18,2023,365,False,43,0
+Thermaenius Hanna,Västerled,167 72,Bromma,51,2023,183,False,611,0
+Thermaenius Johan Bertil,Djupdalsvägen,167 72,Bromma,80,2023,344,False,139,0
+Thermaenius Karin,Djupdalsvägen,167 72,Bromma,80,2023,334,False,194,0
+Thermaenius Peter,Västerled,167 72,Bromma,51,2023,39,False,1,0
+Tjäder Anna,Tapetserarvägen,167 72,Bromma,46,2023,216,False,555,0
+Tjäder Jack Einesson,Tapetserarvägen,167 72,Bromma,16,2023,381,False,0,0
+Tullberg Wengholm Camilla,Västerled,167 72,Bromma,37,2023,50,False,1,0
+Tullberg Wengholm Hugo,Västerled,167 72,Bromma,37,2023,12,False,2,0
+Uddståhl Carlström Sara,Stugvägen,167 72,Bromma,48,2023,18,False,1,0
+Valfridsson Mikael,Stugvägen,167 72,Bromma,54,2023,156,False,671,0
+Videgård Felicia,Tapetserarvägen,167 72,Bromma,39,2023,352,False,71,0
+Videgård Felix,Tapetserarvägen,167 72,Bromma,35,2023,275,False,393,0
+Vikström Lage Jon Andreas,Tapetserarväg…,167 72,Bromma,51,2023,147,False,703,0
+Volpini Borgström Per,Djupdalsvägen,167 72,Bromma,59,2023,22,False,1,0
+Volpini-Borgström Lena,Djupdalsvägen,167 72,Bromma,84,2023,323,False,228,0
+Wadenby Frida,Djupdalsvägen,167 72,Bromma,41,2023,36,False,1,0
+Wadenby Niklas,Djupdalsvägen,167 72,Bromma,46,2023,48,False,1,0
+Wahlund Annelie,Västerled,167 72,Bromma,50,2023,77,False,938,0
+Waldetoft Erika,Stugvägen,167 72,Bromma,35,2023,137,False,718,0
+Wasell Clara Axelsson,Västerled,167 72,Bromma,29,2023,267,False,410,0
+Wasell Erik,Västerled,167 72,Bromma,73,2023,241,False,502,0
+Wessman Annie Margareta,Gökvägen,167 72,Bromma,80,2023,332,False,195,0
+Wessman Gert Rune,Gökvägen,167 72,Bromma,81,2023,280,False,381,0
+Westerlund Annika Sofia,Tapetserarvägen,167 72,Bromma,51,2023,221,False,542,0
+Westerlund Ingalis Gunilla,Tapetserarväg…,167 72,Bromma,81,2022,327,False,206,0
+Westerlund Kjell Åke Sixten,Tapetserarvä…,167 72,Bromma,80,2022,307,False,293,0
+Westerlund Lena,Stugvägen,167 72,Bromma,54,2023,125,False,745,0
+Widebeck Anne,Stugvägen,167 72,Bromma,64,2023,260,False,423,0
+Widebeck Rasmus,Stugvägen,167 72,Bromma,27,2023,381,False,0,0
+Winqvist Andreas,Västerled,167 72,Bromma,37,2023,282,False,376,0
+Winqvist Linnéa,Västerled,167 72,Bromma,35,2023,83,False,920,0
+Winther Christian,Djupdalsvägen,167 72,Bromma,38,2023,134,False,721,0
+Winther Helena,Djupdalsvägen,167 72,Bromma,38,2023,107,False,822,0
+Witt Victoria,Drakstigen,167 72,Bromma,49,2023,76,False,940,0
+Wohlert Hanne,Tapetserarvägen,167 72,Bromma,75,2023,315,False,250,0
+Wolff Björn,Olovslundsvägen,167 72,Bromma,72,2023,266,False,412,0
+Wolff Gunilla Elisabeth,Olovslundsvägen,167 72,Bromma,69,2023,288,False,354,0
+Persson Vanessa,Såningsvägen,175 52,Järfälla,29,2023,794,False,41,0
+Pettersson Fredrik,Tröskvägen,175 52,Järfälla,47,2023,31,False,900,0
+Pettersson Jan,Såningsvägen,175 52,Järfälla,55,2023,137,False,648,0
+Pettersson Ulrika Furuberg,Såningsvägen,175 52,Järfälla,56,2023,253,False,525,0
+Polsiri Kwanprapa,Såningsvägen,175 52,Järfälla,46,2023,437,False,398,0
+Prytz Maria,Såningsvägen,175 52,Järfälla,62,2023,119,False,669,0
+Prytz Mikael,Såningsvägen,175 52,Järfälla,63,2023,212,False,558,0
+Rani Mamta,Tröskvägen,175 52,Järfälla,40,2023,255,False,524,0
+Rasoulimir Shakila,Tröskvägen,175 52,Järfälla,36,2022,824,False,0,0
+Regnander Meller Marie,Tröskvägen,175 52,Järfälla,37,2023,297,False,495,0
+Regnander Meller Nicklas,Tröskvägen,175 52,Järfälla,36,2023,159,False,620,0
+Rehnberg Stephanie,Tröskvägen,175 52,Järfälla,26,2023,764,True,91,0
+Renoux Gabriel,Utsädesgränd,175 52,Järfälla,18,2023,824,False,0,0
+Renoux Samuel,Utsädesgränd,175 52,Järfälla,51,2023,1,False,3,0
+Reza Jian,Såningsvägen,175 52,Järfälla,52,2023,284,False,500,0
+Rezaei Shokoufeh,Såningsvägen,175 52,Järfälla,66,2023,732,False,164,0
+Rickan Robert Anders,Tröskvägen,175 52,Järfälla,44,2023,179,False,592,0
+Rihawi Philip,Tröskvägen,175 52,Järfälla,40,2023,176,True,595,0
+Rizk Toni,Såningsvägen,175 52,Järfälla,52,2023,566,False,299,0
+Roeseler Claudia,Tröskvägen,175 52,Järfälla,50,2023,173,False,597,0
+Roeseler Selmar Louis,Tröskvägen,175 52,Järfälla,21,2023,667,False,229,0
+Ronkainen Laila,Tröskvägen,175 52,Järfälla,56,2023,16,False,1,0
+Rosén Andreas,Tröskvägen,175 52,Järfälla,36,2023,416,False,409,0
+Ruck Ann,Såningsvägen,175 52,Järfälla,55,2023,193,False,573,0
+Ruck Jeffrey St Clair,Såningsvägen,175 52,Järfälla,68,2023,723,False,182,0
+Runestig Eva,Utsädesgränd,175 52,Järfälla,60,2023,19,False,970,0
+Ruzicka Ivan,Tröskvägen,175 52,Järfälla,79,2023,385,False,430,0
+Ruzicka Zdenka Marie,Tröskvägen,175 52,Järfälla,78,2023,689,False,210,0
+Rydberg Jonas,Såningsvägen,175 52,Järfälla,57,2023,71,False,769,0
+Rydberg Lena Camarch,Såningsvägen,175 52,Järfälla,53,2023,259,False,520,0
+Rydberg Mary Kerstin Gunborg,Tröskvägen…,175 52,Järfälla,88,2023,741,False,151,0
+Rydbäck Kristina Theresé,Såningsvägen,175 52,Järfälla,38,2023,557,False,307,0
+Rydén Britt-Marie Helen,Tröskvägen,175 52,Järfälla,75,2023,710,False,195,0
+Rydén Kent Gunnar,Tröskvägen,175 52,Järfälla,80,2023,570,False,297,0
+Rylander Daniel,Såningsvägen,175 52,Järfälla,46,2023,221,False,546,0
+Rylander Linda,Såningsvägen,175 52,Järfälla,45,2023,84,False,741,0
+Ryttberg Esther Vesterlund,Såningsvägen,175 52,Järfälla,18,2023,792,False,41,0
+Rådvall Barbro Margareta,Såningsvägen,175 52,Järfälla,79,2023,583,False,291,0
+Rådvall Björn Lars Erik,Såningsvägen,175 52,Järfälla,80,2023,585,False,289,0
+Rönnmark Anja Birgitta Christina,Tröskväg…,175 52,Järfälla,81,2022,662,False,234,0
+Rönnmark Thomas Peter,Tröskvägen,175 52,Järfälla,83,2022,651,False,245,0
+Saarinen Christian,Såningsvägen,175 52,Järfälla,44,2023,386,False,429,0
+Sabani Adelisa,Tröskvägen,175 52,Järfälla,18,2023,824,False,0,0
+Sabani Asmir,Tröskvägen,175 52,Järfälla,43,2023,273,False,509,0
+Sabani Azbije,Tröskvägen,175 52,Järfälla,69,2023,767,False,85,0
+Sabani Ferit,Tröskvägen,175 52,Järfälla,70,2023,752,False,124,0
+Sabani Semsa,Tröskvägen,175 52,Järfälla,38,2023,606,False,276,0
+Safiri Leila,Tröskvägen,175 52,Järfälla,47,2023,208,False,559,0
+Said Elahe,Såningsvägen,175 52,Järfälla,28,2023,430,False,402,0
+Said Josef,Såningsvägen,175 52,Järfälla,32,2023,240,False,536,0
+Saleem Wadie Raghad,Tröskvägen,175 52,Järfälla,56,2023,425,False,404,0
+Salih Kakabas Aran,Såningsvägen,175 52,Järfälla,17,2023,820,False,5,0
+Salih Sangar,Såningsvägen,175 52,Järfälla,37,2022,682,False,215,0
+Samooei Hayfaa Nafea Samooei,Tröskväg…,175 52,Järfälla,52,2023,582,False,292,0
+Sanbanhaew Nutnicha,Tröskvägen,175 52,Järfälla,44,2023,593,False,286,0
+Sanchez Dagnielo,Såningsvägen,175 52,Järfälla,50,2022,21,False,965,0
+Sandquist Lars Åke,Tröskvägen,175 52,Järfälla,77,2023,591,False,288,0
+Sandquist Ulla,Tröskvägen,175 52,Järfälla,77,2023,626,False,267,0
+Sarik Mariette,Tröskvägen,175 52,Järfälla,44,2023,712,False,194,0
+Schuler Kent,Såningsvägen,175 52,Järfälla,63,2023,238,False,537,0
+Seger Berit Rydström,Såningsvägen,175 52,Järfälla,68,2023,96,False,724,0
+Seger Filip,Såningsvägen,175 52,Järfälla,27,2022,824,False,0,0
+Seger Joakim,Såningsvägen,175 52,Järfälla,63,2023,243,False,535,0
+Segerlund Monika,Såningsvägen,175 52,Järfälla,51,2023,392,False,425,0
+Segerlund Wendela,Såningsvägen,175 52,Järfälla,19,2023,755,False,118,0
+Segerlund Wilma,Såningsvägen,175 52,Järfälla,19,2022,824,False,0,0
+Selinder Kristina,Såningsvägen,175 52,Järfälla,81,2023,620,False,270,0
+Selinder Per Magnus,Såningsvägen,175 52,Järfälla,81,2023,603,False,279,0
+Sernefors Cecilia Christina Maria,Sånings…,175 52,Järfälla,70,2023,493,False,357,0
+Shahed Milad,Tröskvägen,175 52,Järfälla,38,2023,231,False,541,0
+Shire Abdulqani Ali,Tröskvägen,175 52,Järfälla,18,2023,824,False,0,0
+Sikandar Rabia,Såningsvägen,175 52,Järfälla,31,2023,217,False,551,0
+Sikaroudi Amir Ahmad,Tröskvägen,175 52,Järfälla,37,2023,201,False,564,0
+Sikaroudi Nellie,Tröskvägen,175 52,Järfälla,41,2023,762,False,99,0
+Silver Claire Viktoria,Såningsvägen,175 52,Järfälla,34,2023,634,False,260,0
+Simonsson Ulf,Såningsvägen,175 52,Järfälla,65,2023,298,False,494,0
+Singh Rooney,Tröskvägen,175 52,Järfälla,16,2023,824,False,0,0
+Sium Daniel,Såningsvägen,175 52,Järfälla,45,2022,63,False,789,0
+Siwertz Leif Gustav,Såningsvägen,175 52,Järfälla,84,2023,509,False,347,0
+Siwertz Sigrid Margareta,Såningsvägen,175 52,Järfälla,82,2023,590,False,288,0
+Sjöberg Elin,Tröskvägen,175 52,Järfälla,22,2023,779,False,55,0
+Sjöberg Johanna,Såningsvägen,175 52,Järfälla,36,2023,601,False,280,0
+Sjöberg Sven-Olof,Tröskvägen,175 52,Järfälla,58,2023,389,False,427,0
+Sjöblom Paul,Såningsvägen,175 52,Järfälla,53,2023,58,False,808,0
+Sjöborg Anders,Utsädesgränd,175 52,Järfälla,61,2023,36,False,870,0
+Sjöborg Pia,Utsädesgränd,175 52,Järfälla,58,2023,350,False,453,0
+Skoog Anna,Tröskvägen,175 52,Järfälla,60,2023,618,False,270,0
+Skoog Sten Lennart,Tröskvägen,175 52,Järfälla,65,2023,91,False,732,0
+Soheilifar Elena,Såningsvägen,175 52,Järfälla,55,2023,484,False,365,0
+Soheilifar Simon,Såningsvägen,175 52,Järfälla,23,2023,763,False,93,0
+Solrin Kristina,Tröskvägen,175 52,Järfälla,66,2023,373,False,437,0
+Sorner Angelina,Såningsvägen,175 52,Järfälla,19,2023,774,False,68,0
+Sorner Christoffer,Såningsvägen,175 52,Järfälla,49,2023,824,False,0,0
+Sorner Susanna,Såningsvägen,175 52,Järfälla,49,2023,181,False,589,0
+Sorsh Luis Bia,Såningsvägen,175 52,Järfälla,66,2023,367,False,440,0
+Sorsh Nancy,Såningsvägen,175 52,Järfälla,25,2023,623,False,269,0
+Stark Christina Margareta Karlsson,Såning…,175 52,Järfälla,77,2023,676,False,218,0
+Steen Felicia,Såningsvägen,175 52,Järfälla,34,2023,266,False,517,0
+Stenhoff Christian,Såningsvägen,175 52,Järfälla,52,2023,344,False,456,0
+Stenhoff Vanja Lundgren,Såningsvägen,175 52,Järfälla,49,2023,24,False,947,0
+Stensiö Karl Erland,Tröskvägen,175 52,Järfälla,87,2023,110,False,680,0
+Stoiljkovic Maria,Tröskvägen,175 52,Järfälla,35,2023,289,False,498,0
+Stoiljkovic Milos,Tröskvägen,175 52,Järfälla,40,2022,154,False,626,0
+Stoiljkovic Miodrag,Tröskvägen,175 52,Järfälla,69,2023,4,False,1,0
+Stoiljkovic Violeta,Tröskvägen,175 52,Järfälla,59,2023,665,False,232,0
+Stolt David,Såningsvägen,175 52,Järfälla,18,2023,824,False,0,0
+Stolt Robin Jamie,Såningsvägen,175 52,Järfälla,16,2023,824,False,0,0
+Stolt Tomas,Såningsvägen,175 52,Järfälla,49,2023,286,False,499,0
+Storm Ali,Utsädesgränd,175 52,Järfälla,37,2023,42,False,852,0
+Storm Ida,Utsädesgränd,175 52,Järfälla,36,2023,308,False,482,0
+Strandberg Jesper,Såningsvägen,175 52,Järfälla,37,2023,61,False,803,0
+Strandberg Jessica,Såningsvägen,175 52,Järfälla,37,2023,608,False,274,0
+Ström Sonja Elisabeth,Såningsvägen,175 52,Järfälla,79,2023,505,False,349,0
+Strömmer Andreas,Tröskvägen,175 52,Järfälla,35,2023,157,False,622,0
+Strömmer Klara,Tröskvägen,175 52,Järfälla,36,2023,708,False,197,0
+Sulaiman Bikhal,Såningsvägen,175 52,Järfälla,48,2023,666,False,232,0
+Sundberg Alexandra Appelgren,Tröskväge…,175 52,Järfälla,42,2023,161,False,619,0
+Sundberg Björn,Tröskvägen,175 52,Järfälla,44,2023,29,False,929,0
+Sundberg Christian,Såningsvägen,175 52,Järfälla,46,2023,95,False,725,0
+Sundberg Linda,Såningsvägen,175 52,Järfälla,37,2023,390,False,426,0
+Sundberg Niklas,Såningsvägen,175 52,Järfälla,42,2023,13,False,1,0
+Sundbergh Åsa,Såningsvägen,175 52,Järfälla,48,2023,202,False,564,0
+Sundgren Anton,Tröskvägen,175 52,Järfälla,19,2022,803,False,27,0
+Sundgren Catrin,Tröskvägen,175 52,Järfälla,61,2023,156,False,623,0
+Sundholm Pernilla,Utsädesgränd,175 52,Järfälla,52,2023,92,False,729,0
+Sundin Charlotte,Såningsvägen,175 52,Järfälla,59,2023,104,False,697,0
+Sundin Kenneth Sebastian,Såningsvägen,175 52,Järfälla,33,2023,322,False,472,0
+Sundström Nanny Astrid,Såningsvägen,175 52,Järfälla,88,2023,661,False,236,0
+Sundström Solveig Elisabet,Tröskvägen,175 52,Järfälla,78,2023,628,False,266,0
+Sundström Ulf Nils-Erik,Tröskvägen,175 52,Järfälla,79,2023,388,False,428,0
+Andersö Erik Corradini,Strålgatan 47 lgh,112 62,Stockholm,28,2023,353,False,458,0
+Andreasson Rasmus,Strålgatan 8 lgh,112 62,Stockholm,32,2023,46,False,759,0
+Aneteg Robert,Strålgatan 17 lgh,112 62,Stockholm,55,2023,366,False,452,0
+Anselius Anders Olof,Strålgatan 7 lgh,112 62,Stockholm,70,2023,278,False,500,0
+Anselius Yvonne Helena,Strålgatan 7 lgh…,112 62,Stockholm,68,2023,540,False,325,0
+Anséus Viktor,Strålgatan 11 lgh,112 62,Stockholm,45,2023,110,False,642,0
+Antar Robert,Strålgatan 12 lgh,112 62,Stockholm,30,2023,160,False,584,0
+Arabshahi Alice,Strålgatan 23 lgh,112 62,Stockholm,27,2023,310,False,481,0
+Arbinge Amporn,Strålgatan 2 lgh,112 62,Stockholm,54,2023,777,False,41,0
+Arnberg Robin,Strålgatan 35 lgh,112 62,Stockholm,31,2023,38,False,813,0
+Arnlund Ann-Charlotte,Strålgatan 9 lgh,112 62,Stockholm,66,2023,685,True,181,0
+Arvedson Tilde,Strålgatan 21 lgh,112 62,Stockholm,32,2023,126,False,621,0
+Askerud Lars Stefan,Strålgatan 8 lgh,112 62,Stockholm,48,2023,149,False,595,0
+Asnake Abiel,Strålgatan 11 lgh,112 62,Stockholm,50,2023,669,False,203,0
+Autere Jari,Strålgatan 33 lgh,112 62,Stockholm,54,2023,74,False,692,0
+Avila Rojas Vilma,Strålgatan 7 lgh,112 62,Stockholm,68,2023,721,True,127,0
+Axelsson Simon,Strålgatan 21 lgh,112 62,Stockholm,28,2023,465,False,384,0
+Axner Madeleine Elisabet,Strålgatan 19 lg…,112 62,Stockholm,33,2023,202,False,549,0
+Babakhani Maryam,Strålgatan 31 lgh,112 62,Stockholm,59,2023,709,False,145,0
+Backlund Amanda,Strålgatan 21 lgh,112 62,Stockholm,30,2023,375,False,448,0
+Bahadirli Asli,Strålgatan 12 lgh,112 62,Stockholm,27,2023,304,False,483,0
+Baker Juhaina,Strålgatan 12 lgh,112 62,Stockholm,34,2023,20,False,909,0
+Baltzer Ive-Reet,Strålgatan 33 lgh,112 62,Stockholm,89,2023,666,False,204,0
+Barbic Christian,Strålgatan 23 lgh,112 62,Stockholm,31,2023,626,False,241,0
+Bartholomew Hanna Bremler,Strålgatan…,112 62,Stockholm,41,2023,214,False,540,0
+Basdekis Thomas,Strålgatan 23 lgh,112 62,Stockholm,85,2023,414,False,416,0
+Bayazi Anahita,Strålgatan 8 lgh,112 62,Stockholm,28,2023,722,False,126,0
+Bazdar Soghra,Strålgatan 7 lgh,112 62,Stockholm,77,2023,761,False,63,0
+Bengtsson Jonathan Korposoff,Strålgatan…,112 62,Stockholm,27,2023,622,False,249,0
+Bengtsson Monika,Strålgatan 23 lgh,112 62,Stockholm,65,2023,503,False,357,0
+Bengtzon Bengt Carl Johan,Strålgatan 45 l…,112 62,Stockholm,49,2023,16,False,939,0
+Benslama Donia,Strålgatan 41 lgh,112 62,Stockholm,32,2023,579,True,286,0
+Berg Viveca,Strålgatan 7 lgh,112 62,Stockholm,67,2023,543,False,321,0
+Berggren Jens,Strålgatan 7 lgh,112 62,Stockholm,49,2023,351,False,458,0
+Berggren Kristina,Strålgatan 21 lgh,112 62,Stockholm,44,2023,356,False,456,0
+Bergius Ida,Strålgatan 12 lgh,112 62,Stockholm,41,2023,108,False,643,0
+Berglund Johan,Strålgatan 21 lgh,112 62,Stockholm,30,2023,342,False,462,0
+Bergman Martina,Strålgatan 31 lgh,112 62,Stockholm,40,2023,459,False,387,0
+Bergman Mikael,Strålgatan 12 lgh,112 62,Stockholm,31,2023,142,False,605,0
+Bergmark Emma,Strålgatan 29 lgh,112 62,Stockholm,34,2023,188,False,558,0
+Bergstrom Eva,Strålgatan 31 lgh,112 62,Stockholm,60,2023,801,False,0,0
+Bergström Erik,Strålgatan 41 lgh,112 62,Stockholm,31,2023,313,False,479,0
+Bermudez Valencia Rafael,Strålgatan 8 lgh…,112 62,Stockholm,62,2023,567,False,295,0
+Bernales Forsberg Esteban,Strålgatan 3 lg…,112 62,Stockholm,39,2022,798,False,2,0
+Bernhus Gunilla,Strålgatan 11 lgh,112 62,Stockholm,64,2023,683,False,188,0
+Berntsson Paulina,Strålgatan 8 lgh,112 62,Stockholm,33,2023,41,False,792,0
+Billberg Annette,Strålgatan 11 lgh,112 62,Stockholm,55,2023,290,False,493,0
+Birath Anders,Strålgatan 35 lgh,112 62,Stockholm,39,2023,205,False,547,0
+Birath Tove,Strålgatan 35 lgh,112 62,Stockholm,40,2023,196,False,551,0
+Birgersson Filippa,Strålgatan 9 lgh,112 62,Stockholm,40,2023,616,False,255,0
+Birkeland Lydia,Strålgatan 33 lgh,112 62,Stockholm,36,2023,40,False,802,0
+Björdal Jacob,Strålgatan 29 lgh,112 62,Stockholm,35,2023,4,False,1,0
+Björk Jessica,Strålgatan 29 lgh,112 62,Stockholm,53,2023,454,False,392,0
+Björkman Helena,Strålgatan 47 lgh,112 62,Stockholm,31,2023,171,False,575,0
+Björlin Sara,Strålgatan 43 lgh,112 62,Stockholm,35,2023,91,False,662,0
+Björnsdotter Beatrice,Strålgatan 17 lgh,112 62,Stockholm,27,2023,398,False,428,0
+Björnsund Stina,Strålgatan 23 lgh,112 62,Stockholm,28,2023,636,False,230,0
+Blomberg My,Strålgatan 33 lgh,112 62,Stockholm,29,2023,537,False,329,0
+Blomqvist Carina,Strålgatan 7 lgh,112 62,Stockholm,62,2023,29,False,852,0
+Blomqvist Paula,Strålgatan 12 lgh,112 62,Stockholm,56,2023,62,False,714,0
+Blomqvist Per,Strålgatan 21 lgh,112 62,Stockholm,25,2023,674,False,200,0
+Blossner Joanna Maria Denise,Strålgatan…,112 62,Stockholm,33,2023,801,False,0,0
+Boart Linnéa,Strålgatan 7 lgh,112 62,Stockholm,27,2023,595,False,271,0
+Boberg Robin,Strålgatan 45 lgh,112 62,Stockholm,31,2023,432,False,405,0
+Boder Susanna,Strålgatan 5 lgh,112 62,Stockholm,27,2023,442,False,398,0
+Bogghed Bengt Johan Arne,Strålgatan 45 l…,112 62,Stockholm,55,2023,132,False,615,0
+Bogghed Erik,Strålgatan 45 lgh,112 62,Stockholm,51,2023,8,False,1,0
+Bohlin Helena,Strålgatan 29 lgh,112 62,Stockholm,30,2023,727,False,119,0
+Bohlin Henrik,Strålgatan 29 lgh,112 62,Stockholm,62,2023,61,False,715,0
+Bohlin Marianne,Strålgatan 29 lgh,112 62,Stockholm,68,2023,135,False,612,0
+Bois Marie,Strålgatan 29 lgh,112 62,Stockholm,79,2023,621,False,250,0
+Borg Fredrick,Strålgatan 21 lgh,112 62,Stockholm,29,2023,218,False,538,0
+Borg Katarina,Strålgatan 45 lgh,112 62,Stockholm,53,2023,635,False,231,0
+Borg Ludvig,Strålgatan 45 lgh,112 62,Stockholm,18,2023,801,False,0,0
+Bou Chabha Charbel,Strålgatan 2 lgh,112 62,Stockholm,30,2023,801,False,0,0
+Boulos Emanuel,Strålgatan 2 lgh,112 62,Stockholm,20,2023,757,False,71,0
+Brandelius Meja,Strålgatan 23 lgh,112 62,Stockholm,25,2023,374,False,449,0
+Brandhild Carmen Susana,Strålgatan 12 lg…,112 62,Stockholm,67,2023,570,False,293,0
+Brandin Nellie,Strålgatan 21 lgh,112 62,Stockholm,27,2023,88,False,673,0
+Brandrup-Wognsen Emma,Strålgatan 21 lg…,112 62,Stockholm,34,2023,756,False,73,0
+Brandt Jenny,Strålgatan 8 lgh,112 62,Stockholm,44,2023,462,False,386,0
+Brangö Benny,Strålgatan 11 lgh,112 62,Stockholm,62,2023,733,False,112,0
+Brangö Eva,Strålgatan 11 lgh,112 62,Stockholm,63,2023,690,False,172,0
+Brantestig Tobias,Strålgatan 43 lgh,112 62,Stockholm,27,2023,554,False,311,0
+Brevenius Arvid,Strålgatan 7 lgh,112 62,Stockholm,25,2022,546,False,320,0
+Brezina Kerstin,Strålgatan 8 lgh,112 62,Stockholm,55,2023,233,False,530,0
+Brink Joakim,Strålgatan 9 lgh,112 62,Stockholm,38,2023,273,False,502,0
+Broch-Sommerfelt Vanessa Sandelius,Strå…,112 62,Stockholm,21,2023,555,False,311,0
+Broman Sonja Marlene,Strålgatan 7 lgh,112 62,Stockholm,33,2023,467,False,381,0
+Brundin Anna,Strålgatan 9 lgh,112 62,Stockholm,42,2023,432,False,405,0
+Stockholm Brunzell Lena Irene Margareta,Strålgatan…,112 62,Stockholm,71,2023,211,False,542,0
+Carlgren Wilma,Strålgatan 43 lgh,112 62,Stockholm,24,2023,679,False,193,0
+Carlson Clara,Strålgatan 12 lgh,112 62,Stockholm,33,2023,281,False,498,0
+Cederlund Kjell,Strålgatan 17 lgh,112 62,Stockholm,57,2023,486,True,370,0
+Cederqvist Amanda,Strålgatan 23 lgh,112 62,Stockholm,25,2023,754,False,75,0
+Cogne Joel,Strålgatan 23 lgh,112 62,Stockholm,31,2023,732,True,112,0
+Cranz Julia,Strålgatan 33 lgh,112 62,Stockholm,43,2023,52,False,750,0
+Annekvist Lars Stanley Mikael,Vendelsöm…,136 65,Söderby,54,2024,1127,False,146,0
+Arana Perez Rebecca,Albatrossvägen 28 lg…,136 65,Söderby,25,2024,1148,False,130,0
+Aravindababu Sumanth Ram,Vendelsömal…,136 65,Söderby,27,2024,368,False,457,0
+Arcudeanu Ion Aurel,Vendelsömalmsväge…,136 65,Söderby,37,2024,1166,False,120,0
+Arndt Monica Hill,Albatrossvägen,136 65,Söderby,59,2024,363,False,458,0
+Arnelöf Per,Albatrossvägen,136 65,Söderby,44,2024,21,False,865,0
+Artvin Wilmer,Albatrossvägen 62 lgh,136 65,Söderby,21,2024,906,False,241,0
+Asang Irma,Albatrossvägen,136 65,Söderby,18,2024,1209,False,56,0
+Asplund Gonzalez Amanda,Vendelsömalms…,136 65,Söderby,21,2024,1231,False,29,0
+Asplund Henriksson Lina,Albatrossvägen…,136 65,Söderby,42,2024,427,False,425,0
+Asterblom Velazquez Natalie,Vendelsömal…,136 65,Söderby,34,2024,458,False,409,0
+Asterblom Velazquez Patrick,Vendelsömal…,136 65,Söderby,55,2024,609,False,343,0
+Astvik Elin,Vendelsömalmsvägen 229 lgh,136 65,Söderby,18,2024,1217,False,48,0
+Astvik Emma,Vendelsömalmsvägen 229 lgh…,136 65,Söderby,41,2024,137,False,609,0
+Atamaniuk Wojciech Ireneusz,Vendelsöm…,136 65,Söderby,58,2024,47,False,732,0
+Attiya Azher,Albatrossvägen,136 65,Söderby,30,2024,463,True,408,0
+Aving Björn Johan,Albatrossvägen 116 lgh…,136 65,Söderby,82,2024,1069,False,185,0
+Axelsson Mattias,Albatrossvägen,136 65,Söderby,31,2024,794,False,275,0
+Axelsson Niklas,Albatrossvägen,136 65,Söderby,33,2024,226,False,536,0
+Ayala Castillo Cristian,Albatrossvägen 26 l…,136 65,Söderby,50,2024,227,False,533,0
+Ayele Yohannes Haileyesus,Albatrossväge…,136 65,Söderby,48,2024,100,False,642,0
+Azad Hassan,Albatrossvägen,136 65,Söderby,43,2024,148,False,592,0
+Aziz Khabat,Vendelsömalmsvägen 199 lgh…,136 65,Söderby,38,2024,296,False,493,0
+Azzmi Majdoleen,Vendelsömalmsvägen…,136 65,Söderby,31,2024,1245,False,8,0
+Baatarzul Yanjindulam,Vendelsömalmsväg…,136 65,Söderby,56,2023,639,False,334,0
+Backman Ricky,Vendelsömalmsvägen 207 l…,136 65,Söderby,27,2024,588,False,350,0
+Badowska Katarzyna,Vendelsömalmsväge…,136 65,Söderby,41,2024,156,False,584,0
+Badowski Filip,Vendelsömalmsvägen 189 l…,136 65,Söderby,17,2024,1253,False,0,0
+Badowski Robert,Vendelsömalmsvägen…,136 65,Söderby,45,2024,265,False,510,0
+Bahi Khedidja,Vendelsömalmsvägen 233 lg…,136 65,Söderby,76,2024,755,False,288,0
+Bahta Tirhas,Vendelsömalmsvägen 207 lgh…,136 65,Söderby,43,2024,1253,False,0,0
+Bakirdan Erkan,Albatrossvägen 74 lgh,136 65,Söderby,51,2023,642,False,332,0
+Bakirdan Özlem,Albatrossvägen 74 lgh,136 65,Söderby,44,2023,843,False,259,0
+Bapkas Eleni,Vendelsömalmsvägen 205 lgh…,136 65,Söderby,35,2024,559,False,368,0
+Barac Florin,Vendelsömalmsvägen 247 lgh…,136 65,Söderby,42,2023,1224,True,35,0
+Bashir Yousaf,Vendelsömalmsvägen 247 lg…,136 65,Söderby,31,2024,380,False,451,0
+Baumgarte Alf,Albatrossvägen 116 lgh,136 65,Söderby,60,2024,106,False,637,0
+Baumgarte Eva,Albatrossvägen 44 lgh,136 65,Söderby,62,2024,542,False,376,0
+Vendelsö Benediktsson Bodil,Albatrossvägen 108 lg…,136 65,Söderby,56,2024,221,False,538,0
+Berg Inger,Vendelsömalmsvägen 197 lgh,136 65,Söderby,77,2024,1020,False,205,0
+Engström Julia,Fredmansgatan 6 B lgh,118 46,Stockholm,33,2024,83,False,991,0
+Erickson Saga,Kvarngatan 20 A lgh,118 46,Stockholm,30,2024,774,False,137,0
+Ericson Johan,Kvarngatan 14 lgh,118 46,Stockholm,59,2024,57,False,1,0
+Ericson Magnus,Kvarngatan 14 lgh,118 46,Stockholm,61,2024,349,False,527,0
+Ericsson Anna,Bellmansgatan 19 A lgh,118 46,Stockholm,34,2024,558,False,322,0
+Eriksson Ebba Wallin,Kvarngatan 20 lgh,118 46,Stockholm,27,2024,500,False,383,0
+Eriksson Helén,Kvarngatan 10 A lgh,118 46,Stockholm,57,2024,868,False,0,0
+Eriksson Joseph,Kvarngatan 10 A lgh,118 46,Stockholm,27,2024,610,False,280,0
+Eriksson Natasha,Bellmansgatan 23 lgh,118 46,Stockholm,73,2024,767,False,147,0
+Eriksson Torun,Bellmansgatan 38 lgh,118 46,Stockholm,73,2023,429,True,443,0
+Erlandsson Marika,Bellmansgatan 22 B lgh…,118 46,Stockholm,54,2024,233,False,638,0
+Eshraghi Bita,Fredmansgatan 6 B lgh,118 46,Stockholm,41,2024,106,False,905,0
+Evinger Inga-Lill,Kvarngatan 10 A lgh,118 46,Stockholm,80,2024,688,False,218,0
+Fahl David,Bellmansgatan 23 lgh,118 46,Stockholm,38,2024,159,False,775,0
+Falkenstrand Anders,Fredmansgatan 6 B lg…,118 46,Stockholm,68,2023,506,False,374,0
+Falkenstrand Charlotte,Fredmansgatan 6 B…,118 46,Stockholm,66,2023,260,False,607,0
+Falkenstrand Oskar,Fredmansgatan 6 B lgh…,118 46,Stockholm,26,2024,342,False,535,0
+Ferm Rickie,Bellmansgatan 36 lgh,118 46,Stockholm,61,2024,312,True,562,0
+Fernandez Gonzalez Javier,Bellmansgatan,118 46,Stockholm,30,2023,868,False,0,0
+Fernberg Mikael,Kvarngatan 6 lgh,118 46,Stockholm,56,2023,868,False,0,0
+Finn Jesper,Bellmansgatan 24 lgh,118 46,Stockholm,37,2024,641,False,253,0
+Fischer Adam,Kvarngatan 10 B lgh,118 46,Stockholm,25,2024,612,False,279,0
+Fleisher Karin Margareta Nyberg,Bellmans…,118 46,Stockholm,84,2024,509,False,370,0
+Flink Mattias,Fredmansgatan 11 lgh,118 46,Stockholm,51,2024,382,False,485,0
+Flodén Anne-Marie,Bellmansgatan 22 D lg…,118 46,Stockholm,56,2024,325,False,550,0
+Flygare Annika,Bellmansgatan 22 C lgh,118 46,Stockholm,65,2024,126,False,836,0
+Flygare Birgitta,Fredmansgatan 4 lgh,118 46,Stockholm,83,2024,683,False,220,0
+Forsberg Gunilla Marianne,Bellmansgatan…,118 46,Stockholm,67,2023,269,False,601,0
+Forsberg Iris Hautaniemi,Bellmansgatan…,118 46,Stockholm,27,2024,857,False,10,0
+Forsell Raili,Kvarngatan 6 lgh,118 46,Stockholm,65,2023,278,False,593,0
+Forsman Wilma Ekström,Bellmansgatan…,118 46,Stockholm,18,2024,868,False,0,0
+Forsmark Love,Kvarngatan 10 B lgh,118 46,Stockholm,26,2023,574,False,309,0
+Fransson Jill,Kvarngatan 6 lgh,118 46,Stockholm,66,2024,450,False,422,0
+Fransson Mathz,Kvarngatan 6 lgh,118 46,Stockholm,68,2024,650,False,248,0
+Friman Anita,Kvarngatan 10 B lgh,118 46,Stockholm,75,2024,746,False,173,0
+Fris Katarina,Fredmansgatan 6 B lgh,118 46,Stockholm,68,2023,49,False,1,0
+Fryer Wendy Josephine,Kvarngatan 14 lgh…,118 46,Stockholm,87,2024,643,False,252,0
+Fryklund Anna,Fredmansgatan 1 lgh,118 46,Stockholm,69,2024,379,False,489,0
+Fryklund Tobias,Fredmansgatan 1 lgh,118 46,Stockholm,35,2023,649,True,249,0
+Fröjdholm Nina Shwenkér,Fredmansgatan…,118 46,Stockholm,29,2024,266,False,602,0
+Fåhraeus Maria,Bellmansgatan 19 A lgh,118 46,Stockholm,58,2024,225,False,650,0
+Fåhraeus Matts,Bellmansgatan 19 A lgh,118 46,Stockholm,62,2024,289,False,581,0
+Garpebring Åke Eskil,Kvarngatan 2 lgh,118 46,Stockholm,89,2024,521,False,356,0
+Gens Martin,Bellmansgatan 22 B lgh,118 46,Stockholm,40,2024,145,False,802,0
+Gentele Birgitta,Bellmansgatan 22 D lgh,118 46,Stockholm,74,2024,598,False,290,0
+Gering Rein,Kvarngatan 6 A lgh,118 46,Stockholm,66,2024,675,False,226,0
+Ghebrehawariat Barakat,Kvarngatan 8 B lg…,118 46,Stockholm,43,2023,319,False,558,0
+Gidlund Janne,Bellmansgatan 24 lgh,118 46,Stockholm,73,2024,593,False,293,0
+Ginner Rubiano Julieth Tatiana,Kvarngata…,118 46,Stockholm,21,2024,700,False,207,0
+Glemstedt Birgitta,Fredmansgatan 4 lgh,118 46,Stockholm,61,2024,161,False,772,0
+Godin Axel Scheutz,Fredmansgatan 4 lgh…,118 46,Stockholm,34,2024,111,False,886,0
+Gojzman Sara,Bellmansgatan 22 C lgh,118 46,Stockholm,77,2023,565,False,314,0
+Goland Anna My,Bellmansgatan 38 lgh,118 46,Stockholm,51,2024,21,False,1,0
+Golster Moa,Fredmansgatan 9 lgh,118 46,Stockholm,31,2024,476,False,404,0
+Granell Inger Axelsson,Kvarngatan 8 A lgh…,118 46,Stockholm,81,2023,527,False,351,0
+Granman Oskar,Fredmansgatan 9 lgh,118 46,Stockholm,27,2024,507,False,374,0
+Gref Birgitta,Kvarngatan 3 E lgh,118 46,Stockholm,59,2024,212,False,671,0
+Gref Erik,Kvarngatan 3 E lgh,118 46,Stockholm,57,2024,18,False,1,0
+Grundtman Markus,Kvarngatan 14 lgh,118 46,Stockholm,53,2024,160,False,774,0
+Gullberger Carl Olov,Bellmansgatan 28 lgh…,118 46,Stockholm,64,2024,714,False,198,0
+Gullberger Sirpa,Bellmansgatan 28 lgh,118 46,Stockholm,65,2024,690,False,217,0
+Gunnarsson Lindegren Moa,Bellmansgata…,118 46,Stockholm,30,2024,168,False,751,0
+Gunnarsson Sara,Kvarngatan 20 A lgh,118 46,Stockholm,43,2024,320,False,557,0
+Gustafsson Holger,Kvarngatan 12 lgh,118 46,Stockholm,60,2024,232,False,639,0
+Gustafsson Per,Bellmansgatan 25 lgh,118 46,Stockholm,48,2024,535,False,345,0
+Gustavsson Christer,Kvarngatan 10 A lgh,118 46,Stockholm,74,2024,645,False,250,0
+Gustavsson Jesper,Bellmansgatan 24 lgh…,118 46,Stockholm,27,2024,478,False,404,0
+Gäfvert Malin,Bellmansgatan 25 lgh,118 46,Stockholm,48,2024,170,False,749,0
+Gärling Ida,Kvarngatan 8 A lgh,118 46,Stockholm,30,2024,198,False,698,0
+Haapapuro Matti-Pietari,Fredmansgatan…,118 46,Stockholm,71,2024,532,False,348,0
+Hadi Meranoosh,Kvarngatan 8 A lgh,118 46,Stockholm,62,2024,647,False,249,0
+Hagel Diatchenko Tatiana,Kvarngatan 10 A…,118 46,Stockholm,51,2024,559,False,322,0
+Hager Ofelia,Kvarngatan 6 lgh,118 46,Stockholm,27,2024,427,False,445,0
+Haglund Mona Elisabeth,Kvarngatan 8 A lg…,118 46,Stockholm,61,2023,561,False,318,0
+Hamberg Bengt,Bellmansgatan 38 lgh,118 46,Stockholm,78,2023,70,False,1,0
+Hammel Eric,Fredmansgatan 1 lgh,118 46,Stockholm,59,2024,790,True,111,0
+Hammer Jockson,Bellmansgatan 25 A lgh…,118 46,Stockholm,63,2024,556,False,323,0
+Hammervold Yvonne,Kvarngatan 20 lgh,118 46,Stockholm,37,2024,84,False,989,0
+Hamngren Anna Margareta Berglund,Bell…,118 46,Stockholm,75,2024,495,False,388,0
+Harg Jörgen,Kvarngatan 10 A lgh,118 46,Stockholm,71,2024,696,False,210,0
+Hau Hanna Ginner,Kvarngatan 14 lgh,118 46,Stockholm,53,2023,151,False,789,0
+Hautaniemi Kari Juhani,Bellmansgatan…,118 46,Stockholm,73,2024,492,False,389,0
+Hedbäck Lisa,Fredmansgatan 6 B lgh,118 46,Stockholm,27,2024,370,False,500,0
+Hedenstrand Jenny,Kvarngatan 14 lgh,118 46,Stockholm,53,2024,614,False,277,0
+Helin Greger,Kvarngatan 22 lgh,118 46,Stockholm,77,2024,538,False,343,0
+Hellerström Björn,Bellmansgatan 23 A lgh…,118 46,Stockholm,80,2024,400,False,475,0
+Hellström Irene,Bellmansgatan 24 lgh,118 46,Stockholm,81,2024,589,False,297,0
+Hellström Olov,Kvarngatan 18 lgh,118 46,Stockholm,70,2024,625,False,265,0
+Hendberg David Folke,Bellmansgatan 23 lg…,118 46,Stockholm,44,2024,264,False,602,0
+Herrmann Peter Erik Joakim,Kvarngatan…,118 46,Stockholm,45,2024,522,False,356,0
+Hertz Rasmus Ågren,Kvarngatan 6 lgh,118 46,Stockholm,29,2024,842,False,27,0
+Hildebrandt Bjarne,Bellmansgatan 26 lgh…,118 46,Stockholm,78,2024,579,False,304,0
+Hildebrandt Maj Sigrid Burell,Bellmansgat…,118 46,Stockholm,77,2024,646,False,250,0
+Hildén Anja,Bellmansgatan 19 lgh,118 46,Stockholm,60,2024,93,False,946,0
+Bergmark Lucas,Bellmansgatan 24 lgh,118 46,Stockholm,39,2024,323,False,552,0

@@ -1,0 +1,147 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+127.0.0.1 - - [09/Aug/2025 21:23:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:23:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:23:48] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:24:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:24:12] "GET /api/salary-distribution HTTP/1.1" 200 -
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/database.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/database.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+127.0.0.1 - - [09/Aug/2025 21:28:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:28:39] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:28:43] "GET /area/167%2072 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:28:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:28:56] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:28:58] "GET /area/175%2052 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:03] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:05] "GET /area/112%2062 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:08] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:10] "GET /area/186%2053 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:29:12] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:33:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:33:12] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:33:17] "GET /area/186%2053 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:33:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:33:46] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:33:47] "GET /area/118%2046 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:34:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:34:23] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:34:28] "GET /area/175%2052 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:34:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:34:43] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:34:47] "GET /area/167%2072 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:35:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:35:00] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:35:02] "GET /area/136%2065 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:39:20] "GET /area/136%2065 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'darkgreen', 'lightgray', 'gray', 'darkpurple', 'pink', 'lightgreen', 'orange', 'cadetblue', 'lightblue', 'white', 'green', 'darkred', 'lightred', 'darkblue', 'purple', 'beige', 'blue', 'red', 'black'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [09/Aug/2025 21:40:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:40:21] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:41:41] "GET /area/186%2053 HTTP/1.1" 200 -
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'gray', 'purple', 'pink', 'darkblue', 'green', 'beige', 'white', 'lightgray', 'cadetblue', 'black', 'darkpurple', 'red', 'orange', 'blue', 'lightred', 'darkgreen', 'lightblue', 'lightgreen', 'darkred'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [09/Aug/2025 21:54:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:54:20] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:54:29] "GET /area/118%2046 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'gray', 'purple', 'pink', 'darkblue', 'green', 'beige', 'white', 'lightgray', 'cadetblue', 'black', 'darkpurple', 'red', 'orange', 'blue', 'lightred', 'darkgreen', 'lightblue', 'lightgreen', 'darkred'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [09/Aug/2025 21:56:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:56:25] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [09/Aug/2025 21:56:29] "GET /area/186%2053 HTTP/1.1" 200 -
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+127.0.0.1 - - [09/Aug/2025 22:07:38] "GET /area/186%2053 HTTP/1.1" 200 -
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+127.0.0.1 - - [10/Aug/2025 22:44:02] "GET /area/186%2053 HTTP/1.1" 200 -
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+127.0.0.1 - - [10/Aug/2025 22:59:49] "GET /area/186%2053 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'purple', 'lightgray', 'lightred', 'black', 'darkred', 'orange', 'green', 'darkgreen', 'gray', 'blue', 'darkpurple', 'lightblue', 'pink', 'darkblue', 'lightgreen', 'red', 'beige', 'cadetblue', 'white'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [10/Aug/2025 22:59:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 22:59:58] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 23:00:25] "GET /area/136%2065 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 23:01:38] "GET /area/118%2046 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'purple', 'lightgray', 'lightred', 'black', 'darkred', 'orange', 'green', 'darkgreen', 'gray', 'blue', 'darkpurple', 'lightblue', 'pink', 'darkblue', 'lightgreen', 'red', 'beige', 'cadetblue', 'white'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [10/Aug/2025 23:02:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 23:02:43] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 23:02:47] "GET /area/186%2053 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'purple', 'lightgray', 'lightred', 'black', 'darkred', 'orange', 'green', 'darkgreen', 'gray', 'blue', 'darkpurple', 'lightblue', 'pink', 'darkblue', 'lightgreen', 'red', 'beige', 'cadetblue', 'white'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [10/Aug/2025 23:04:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 23:04:11] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 23:05:09] "GET /area/112%2062 HTTP/1.1" 200 -
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+ * Detected change in '/Users/torfimag/Documents/py_projekt/ratsit_app/final_working_parser.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-962-528
+127.0.0.1 - - [12/Aug/2025 20:55:02] "GET /area/112%2062 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'lightred', 'lightgray', 'green', 'black', 'darkpurple', 'blue', 'lightblue', 'white', 'cadetblue', 'darkgreen', 'darkblue', 'red', 'purple', 'pink', 'orange', 'beige', 'darkred', 'gray', 'lightgreen'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [12/Aug/2025 20:57:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 20:57:00] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 20:58:25] "GET /area/136%2065 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'lightred', 'lightgray', 'green', 'black', 'darkpurple', 'blue', 'lightblue', 'white', 'cadetblue', 'darkgreen', 'darkblue', 'red', 'purple', 'pink', 'orange', 'beige', 'darkred', 'gray', 'lightgreen'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [12/Aug/2025 21:05:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 21:05:15] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 21:05:43] "GET /area/167%2072 HTTP/1.1" 200 -
+/Users/torfimag/Documents/py_projekt/ratsit_app/app.py:59: UserWarning: color argument of Icon should be one of: {'lightred', 'lightgray', 'green', 'black', 'darkpurple', 'blue', 'lightblue', 'white', 'cadetblue', 'darkgreen', 'darkblue', 'red', 'purple', 'pink', 'orange', 'beige', 'darkred', 'gray', 'lightgreen'}.
+  icon=folium.Icon(color=color, icon='info-sign')
+127.0.0.1 - - [12/Aug/2025 21:06:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 21:06:00] "GET /api/salary-distribution HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 21:06:27] "GET /area/167%2072 HTTP/1.1" 200 -

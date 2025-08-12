@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}Stockholm Income Map - Ratsit Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Stockholm Income Analysis</h1>
+        <p class="lead">Interactive map and rankings of income data by postal area</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Map Section -->
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Stockholm Income Map</h3>
+                <small class="text-muted">Click markers for detailed area information</small>
+            </div>
+            <div class="card-body p-0">
+                <div class="map-container">
+                    {{ map_html|safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Area Rankings -->
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Area Rankings</h3>
+                <small class="text-muted">By average salary</small>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive" style="max-height: 450px; overflow-y: auto;">
+                    <table class="table table-sm ranking-table mb-0">
+                        <thead class="sticky-top">
+                            <tr>
+                                <th>Area</th>
+                                <th>Avg Salary</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for area in area_rankings %}
+                            <tr>
+                                <td>
+                                    <a href="{{ url_for('area_detail', postal_code=area.postal_code) }}" class="text-decoration-none">
+                                        <strong>{{ area.area_name }}</strong><br>
+                                        <small class="text-muted">{{ area.postal_code }}</small>
+                                    </a>
+                                </td>
+                                <td class="{% if area.avg_salary > 1000000 %}salary-high{% elif area.avg_salary > 500000 %}salary-medium{% else %}salary-low{% endif %}">
+                                    {{ "{:,}".format(area.avg_salary) }} SEK
+                                </td>
+                                <td>{{ area.person_count }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Top Earners -->
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h3>Top 20 Earners</h3>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                    <table class="table table-sm mb-0">
+                        <thead class="sticky-top bg-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Area</th>
+                                <th>Salary</th>
+                                <th>Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for person in top_earners %}
+                            <tr>
+                                <td>
+                                    <strong>{{ person.name }}</strong><br>
+                                    <small class="text-muted">{{ person.address }}</small>
+                                </td>
+                                <td>{{ person.area_name }}</td>
+                                <td class="salary-high">{{ "{:,}".format(person.salary) }} SEK</td>
+                                <td><span class="badge bg-secondary">#{{ person.salary_rank }}</span></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Salary Distribution Chart -->
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h3>Salary Distribution</h3>
+            </div>
+            <div class="card-body">
+                <canvas id="salaryChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Load salary distribution chart
+fetch('/api/salary-distribution')
+    .then(response => response.json())
+    .then(data => {
+        const ctx = document.getElementById('salaryChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: data.map(d => d.range),
+                datasets: [{
+                    data: data.map(d => d.count),
+                    backgroundColor: [
+                        '#4575b4',
+                        '#74add1', 
+                        '#fee08b',
+                        '#fc8d59',
+                        '#d73027'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

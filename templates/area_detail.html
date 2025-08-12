@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}{{ stats.area_name }} - Area Details{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Dashboard</a></li>
+                <li class="breadcrumb-item active">{{ stats.area_name }}</li>
+            </ol>
+        </nav>
+        
+        <h1>{{ stats.area_name }}</h1>
+        <p class="lead">Postal Code: {{ stats.postal_code }}</p>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Statistics Cards -->
+    <div class="col-md-2">
+        <div class="card bg-primary text-white">
+            <div class="card-body text-center">
+                <h3>{{ stats.total_people }}</h3>
+                <small>Total People</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <div class="card bg-success text-white">
+            <div class="card-body text-center">
+                <h4>{{ "{:,}".format(stats.avg_salary) }}</h4>
+                <small>Avg Salary (SEK)</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <div class="card bg-info text-white">
+            <div class="card-body text-center">
+                <h4>{{ "{:,}".format(stats.min_salary) }}</h4>
+                <small>Min Salary</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <div class="card bg-warning text-white">
+            <div class="card-body text-center">
+                <h4>{{ "{:,}".format(stats.max_salary) }}</h4>
+                <small>Highest Salary</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <div class="card bg-secondary text-white">
+            <div class="card-body text-center">
+                <h4>{{ "{:,}".format(stats.min_salary) }}</h4>
+                <small>Lowest Salary</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <div class="card bg-dark text-white">
+            <div class="card-body text-center">
+                <h4>{{ stats.avg_age }}</h4>
+                <small>Avg Age</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>All Residents ({{ stats.total_people }} people)</h3>
+                <small class="text-muted">Sorted by salary (highest first)</small>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-striped mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Age</th>
+                                <th>Salary</th>
+                                <th>Capital</th>
+                                <th>Rank</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for person in persons %}
+                            <tr>
+                                <td><strong>{{ person.name }}</strong></td>
+                                <td>{{ person.address }}</td>
+                                <td>{{ person.age }}</td>
+                                <td class="{% if person.salary > 1000000 %}salary-high{% elif person.salary > 500000 %}salary-medium{% else %}salary-low{% endif %}">
+                                    {{ "{:,}".format(person.salary) }} SEK
+                                </td>
+                                <td>
+                                    {% if person.capital >= 0 %}
+                                        <span class="text-success">{{ "{:,}".format(person.capital) }} SEK</span>
+                                    {% else %}
+                                        <span class="text-danger">{{ "{:,}".format(person.capital) }} SEK</span>
+                                    {% endif %}
+                                </td>
+                                <td><span class="badge bg-secondary">#{{ person.salary_rank }}</span></td>
+                                <td>{{ person.income_year }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
