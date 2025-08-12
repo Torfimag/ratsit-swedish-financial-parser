@@ -10,22 +10,35 @@ This is a Python Flask application that processes Swedish Ratsit salary data fro
 
 The application consists of several key components:
 
-- **pdf_parser.py**: Extracts structured data from Ratsit PDF files using pdfplumber, parsing names, addresses, postal codes, salaries, capital income, and other demographic data
-- **database.py**: SQLite database layer with schema for persons table and area statistics views
-- **app.py**: Flask web application providing dashboard, area detail pages, and JSON APIs
-- **main.py**: Data processing pipeline that coordinates PDF parsing and database insertion
-- **templates/**: Jinja2 templates with Bootstrap UI for responsive web interface
+- **pdf_parser.py**: Core PDF extraction using pdfplumber with regex patterns for structured data parsing
+- **database.py**: SQLite database layer with `persons` table and `area_stats` view for aggregated analytics
+- **app.py**: Flask web application with routes for dashboard, area details, and JSON APIs
+- **main.py**: Data processing pipeline that orchestrates PDF parsing and database population
+- **templates/**: Jinja2 templates with Bootstrap UI, interactive maps (Folium), and Chart.js visualizations
+
+Multiple parser variants exist (improved_parser.py, final_parser.py, etc.) representing development iterations - pdf_parser.py is the current stable version.
 
 ## Common Development Commands
 
+### Dependencies and Setup
+```bash
+# Install required packages
+pip install -r requirements.txt
+
+# Create sample data for testing (without PDF files)
+python create_sample_data.py
+```
+
 ### Data Processing
 ```bash
-# Process all PDFs and populate database
+# Process all PDFs in pdfer/ directory and populate database
 python main.py
 
-# Test individual components
-python pdf_parser.py
+# Test database operations independently
 python database.py
+
+# Check database contents and structure
+python check_db.py
 ```
 
 ### Web Application
@@ -36,31 +49,46 @@ python app.py
 # Access application at http://localhost:5000
 ```
 
-### Dependencies
+### Development and Testing
 ```bash
-# Install required packages
-pip install -r requirements.txt
+# Debug PDF parsing with specific files
+python debug_parser.py
+
+# Test amount parsing specifically
+python debug_amounts.py
 ```
 
-## Data Structure
+## Data Processing Pipeline
 
-The application processes PDF data with these key fields:
-- Name, address, postal code, area name
-- Age, income year, salary ranking within postal area
-- Salary (employment income) and capital income
-- Payment remarks (debt markers)
-
-## Key Features
-
-- **PDF Processing**: Robust parsing of Swedish text with special characters
-- **Geographic Mapping**: Folium integration with Stockholm postal code coordinates
-- **Income Analytics**: Area rankings, salary distributions, top earners
-- **Responsive UI**: Bootstrap-based interface with interactive maps and charts
+1. **PDF Input**: Place Ratsit PDF files in `pdfer/` directory
+2. **Parsing**: `main.py` calls `RatsitPDFParser.parse_all_pdfs()` to extract structured data
+3. **Database**: Parsed data inserted via `RatsitDatabase.insert_persons()`
+4. **Validation**: Parser handles Swedish characters, currency formatting, and data validation
+5. **Analytics**: `area_stats` view provides real-time aggregations for the web interface
 
 ## Database Schema
 
-The main `persons` table stores individual records with indexes on postal_code, area_name, salary, and income_year. An `area_stats` view provides aggregated statistics for geographic analysis.
+### persons table
+- Core fields: name, address, postal_code, area_name, age, income_year
+- Financial: salary, capital, salary_rank, payment_remarks
+- Indexes on postal_code, area_name, salary, income_year for performance
 
-## Swedish Language Support
+### area_stats view
+- Aggregated statistics: person_count, avg_salary, min/max_salary, avg_capital, avg_age
+- Grouped by postal_code and area_name for geographic analysis
 
-The codebase handles Swedish characters (åäöÅÄÖ) and Ratsit-specific data formats including postal codes (format "XXX XX") and Swedish kronor amounts.
+## Key Features and Components
+
+- **Swedish Text Processing**: Handles åäöÅÄÖ characters and Swedish postal code format (XXX XX)
+- **Geographic Mapping**: Folium integration with Stockholm coordinates, color-coded salary markers
+- **PDF Data Extraction**: Regex-based parsing of Ratsit-specific PDF layouts and formatting
+- **Interactive Analytics**: Area rankings, top earners, salary distributions with Chart.js
+- **Responsive Design**: Bootstrap-based templates with mobile-friendly navigation
+
+## Development Notes
+
+- Multiple parser files exist as development iterations - use pdf_parser.py as the primary implementation
+- Stockholm coordinates are hardcoded in app.py for postal code mapping
+- Sample data generation available via create_sample_data.py for development without PDFs
+- Application handles Swedish kronor formatting and negative capital values
+- Database operations use pandas DataFrames for efficient bulk operations

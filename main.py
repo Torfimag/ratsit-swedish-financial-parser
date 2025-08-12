@@ -3,7 +3,7 @@
 Main script to process PDFs and populate the database
 """
 
-from pdf_parser import RatsitPDFParser
+from final_working_parser import FinalWorkingParser
 from database import RatsitDatabase
 import sys
 
@@ -12,7 +12,7 @@ def main():
     print("=" * 50)
     
     # Initialize components
-    parser = RatsitPDFParser()
+    parser = FinalWorkingParser()
     db = RatsitDatabase()
     
     # Parse all PDFs

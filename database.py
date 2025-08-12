@@ -109,8 +109,8 @@ class RatsitDatabase:
         conn.close()
         return df
     
-    def get_persons_by_area(self, postal_code=None, area_name=None):
-        """Get all persons for a specific area"""
+    def get_persons_by_area(self, postal_code=None, area_name=None, sort_by='salary', sort_order='desc'):
+        """Get all persons for a specific area with sorting"""
         conn = sqlite3.connect(self.db_path)
         
         where_conditions = []
@@ -128,10 +128,24 @@ class RatsitDatabase:
         if where_conditions:
             where_clause = "WHERE " + " AND ".join(where_conditions)
         
+        # Validate sort parameters
+        valid_columns = ['name', 'address', 'age', 'salary', 'capital', 'salary_rank']
+        if sort_by not in valid_columns:
+            sort_by = 'salary'
+        
+        if sort_order.lower() not in ['asc', 'desc']:
+            sort_order = 'desc'
+        
+        # Map frontend column names to database column names
+        column_mapping = {
+            'rank': 'salary_rank'
+        }
+        db_column = column_mapping.get(sort_by, sort_by)
+        
         query = f'''
             SELECT * FROM persons 
             {where_clause}
-            ORDER BY salary DESC
+            ORDER BY {db_column} {sort_order.upper()}
         '''
         
         df = pd.read_sql_query(query, conn, params=params)
@@ -158,11 +172,25 @@ class RatsitDatabase:
         conn.close()
         return df
     
-    def get_top_earners(self, limit=50):
-        """Get top earners across all areas"""
+    def get_top_earners(self, limit=50, sort_by='salary', sort_order='desc'):
+        """Get top earners across all areas with sorting"""
         conn = sqlite3.connect(self.db_path)
         
-        query = '''
+        # Validate sort parameters
+        valid_columns = ['name', 'address', 'age', 'salary', 'capital', 'salary_rank']
+        if sort_by not in valid_columns:
+            sort_by = 'salary'
+        
+        if sort_order.lower() not in ['asc', 'desc']:
+            sort_order = 'desc'
+        
+        # Map frontend column names to database column names
+        column_mapping = {
+            'rank': 'salary_rank'
+        }
+        db_column = column_mapping.get(sort_by, sort_by)
+        
+        query = f'''
             SELECT 
                 name,
                 address, 
@@ -173,7 +201,7 @@ class RatsitDatabase:
                 age,
                 salary_rank
             FROM persons 
-            ORDER BY salary DESC, salary_rank ASC
+            ORDER BY {db_column} {sort_order.upper()}, salary_rank ASC
             LIMIT ?
         '''
         

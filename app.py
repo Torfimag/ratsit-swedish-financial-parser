@@ -66,11 +66,15 @@ def index():
     """Main dashboard page"""
     db = RatsitDatabase()
     
+    # Get sorting parameters for top earners
+    sort_by = request.args.get('sort', 'salary')
+    sort_order = request.args.get('order', 'desc')
+    
     # Get area rankings
     area_rankings = db.get_area_rankings()
     
-    # Get top earners
-    top_earners = db.get_top_earners(20)
+    # Get top earners with sorting
+    top_earners = db.get_top_earners(20, sort_by=sort_by, sort_order=sort_order)
     
     # Create map
     stockholm_map = create_stockholm_map(area_rankings)
@@ -79,15 +83,21 @@ def index():
     return render_template('index.html', 
                          area_rankings=area_rankings.to_dict('records'),
                          top_earners=top_earners.to_dict('records'),
-                         map_html=map_html)
+                         map_html=map_html,
+                         current_sort=sort_by,
+                         current_order=sort_order)
 
 @app.route('/area/<postal_code>')
 def area_detail(postal_code):
     """Detail page for a specific area"""
     db = RatsitDatabase()
     
-    # Get persons in this area
-    persons = db.get_persons_by_area(postal_code=postal_code)
+    # Get sorting parameters from query string
+    sort_by = request.args.get('sort', 'salary')
+    sort_order = request.args.get('order', 'desc')
+    
+    # Get persons in this area with sorting
+    persons = db.get_persons_by_area(postal_code=postal_code, sort_by=sort_by, sort_order=sort_order)
     
     if persons.empty:
         return "Area not found", 404
@@ -107,7 +117,9 @@ def area_detail(postal_code):
     
     return render_template('area_detail.html',
                          stats=stats,
-                         persons=persons.to_dict('records'))
+                         persons=persons.to_dict('records'),
+                         current_sort=sort_by,
+                         current_order=sort_order)
 
 @app.route('/api/salary-distribution')
 def salary_distribution():
@@ -132,4 +144,4 @@ def salary_distribution():
     return jsonify(distribution)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5002)
