@@ -76,6 +76,9 @@ def index():
     # Get top earners with sorting
     top_earners = db.get_top_earners(20, sort_by=sort_by, sort_order=sort_order)
     
+    # Get top capital owners
+    top_capital_owners = db.get_top_capital_owners(20)
+    
     # Create map
     stockholm_map = create_stockholm_map(area_rankings)
     map_html = stockholm_map._repr_html_()
@@ -83,6 +86,7 @@ def index():
     return render_template('index.html', 
                          area_rankings=area_rankings.to_dict('records'),
                          top_earners=top_earners.to_dict('records'),
+                         top_capital_owners=top_capital_owners.to_dict('records'),
                          map_html=map_html,
                          current_sort=sort_by,
                          current_order=sort_order)
@@ -142,6 +146,37 @@ def salary_distribution():
         distribution.append({'range': label, 'count': count})
     
     return jsonify(distribution)
+
+@app.route('/search')
+def search():
+    """Search for persons by name or address"""
+    search_term = request.args.get('q', '').strip()
+    
+    if not search_term:
+        return render_template('search_results.html', results=[], search_term='')
+    
+    db = RatsitDatabase()
+    results = db.search_persons(search_term, limit=50)
+    
+    return render_template('search_results.html', 
+                         results=results.to_dict('records'),
+                         search_term=search_term)
+
+@app.route('/api/loan-distribution')
+def api_loan_distribution():
+    """API endpoint for loan distribution by age groups"""
+    db = RatsitDatabase()
+    data = db.get_loan_distribution_by_age()
+    
+    # Filter out any invalid data
+    valid_data = []
+    for item in data:
+        if (item['age_group'] and 
+            isinstance(item['loan_percentage'], (int, float)) and 
+            not pd.isna(item['loan_percentage'])):
+            valid_data.append(item)
+    
+    return jsonify(valid_data)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5002)

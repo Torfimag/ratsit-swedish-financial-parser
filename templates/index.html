@@ -10,6 +10,28 @@
     </div>
 </div>
 
+<!-- Search Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-search"></i> Search People</h3>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('search') }}" method="GET" class="mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" placeholder="Search by name or street address..." value="">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+                <div id="search-results"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="row">
     <!-- Map Section -->
     <div class="col-lg-8">
@@ -68,7 +90,7 @@
 
 <div class="row">
     <!-- Top Earners -->
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <div class="card">
             <div class="card-header">
                 <h3>Top 20 Earners</h3>
@@ -134,14 +156,47 @@
         </div>
     </div>
     
-    <!-- Salary Distribution Chart -->
-    <div class="col-lg-6">
+    <!-- Top Capital Owners -->
+    <div class="col-lg-4">
         <div class="card">
             <div class="card-header">
-                <h3>Salary Distribution</h3>
+                <h3>Top 20 Capital Owners</h3>
+                <small class="text-muted">Highest capital income</small>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                    <table class="table table-sm mb-0">
+                        <thead class="sticky-top bg-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Area</th>
+                                <th>Capital</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for person in top_capital_owners %}
+                            <tr>
+                                <td>{{ person.name }}</td>
+                                <td>{{ person.area_name }}</td>
+                                <td class="text-success">{{ "{:,}".format(person.capital) }} SEK</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Loan Distribution Chart -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Loan % by Age Group</h3>
+                <small class="text-muted">Negative capital = loans</small>
             </div>
             <div class="card-body">
-                <canvas id="salaryChart" height="300"></canvas>
+                <canvas id="loanChart" height="300"></canvas>
             </div>
         </div>
     </div>
@@ -150,36 +205,91 @@
 
 {% block scripts %}
 <script>
-// Load salary distribution chart
-fetch('/api/salary-distribution')
+// Load loan distribution chart
+fetch('/api/loan-distribution')
     .then(response => response.json())
     .then(data => {
-        const ctx = document.getElementById('salaryChart').getContext('2d');
+        console.log('Loan distribution data:', data);
+        
+        // Filter out any invalid data
+        const validData = data.filter(item => 
+            item.age_group && 
+            typeof item.loan_percentage === 'number' && 
+            !isNaN(item.loan_percentage)
+        );
+        
+        if (validData.length === 0) {
+            document.getElementById('loanChart').parentElement.innerHTML = 
+                '<p class="text-muted">No loan data available</p>';
+            return;
+        }
+        
+        const ctx = document.getElementById('loanChart').getContext('2d');
         new Chart(ctx, {
-            type: 'doughnut',
+            type: 'bar',
             data: {
-                labels: data.map(d => d.range),
+                labels: validData.map(d => d.age_group),
                 datasets: [{
-                    data: data.map(d => d.count),
+                    label: 'Loan Percentage',
+                    data: validData.map(d => d.loan_percentage),
                     backgroundColor: [
-                        '#4575b4',
-                        '#74add1', 
-                        '#fee08b',
-                        '#fc8d59',
-                        '#d73027'
-                    ]
+                        '#ff6b6b',
+                        '#4ecdc4',
+                        '#45b7d1',
+                        '#96ceb4',
+                        '#ffeaa7',
+                        '#dda0dd'
+                    ],
+                    borderColor: [
+                        '#ff5252',
+                        '#26a69a',
+                        '#2196f3',
+                        '#66bb6a',
+                        '#ffcc02',
+                        '#ba68c8'
+                    ],
+                    borderWidth: 1
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                },
                 plugins: {
                     legend: {
-                        position: 'bottom'
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const item = validData[context.dataIndex];
+                                return [
+                                    `Loan Rate: ${context.parsed.y.toFixed(1)}%`,
+                                    `People with loans: ${item.people_with_loans}`,
+                                    `Total people: ${item.total_people}`,
+                                    `Avg loan: ${item.avg_loan_amount.toLocaleString()} SEK`
+                                ];
+                            }
+                        }
                     }
                 }
             }
         });
+    })
+    .catch(error => {
+        console.error('Error loading loan chart:', error);
+        document.getElementById('loanChart').parentElement.innerHTML = 
+            '<p class="text-danger">Error loading chart data</p>';
     });
 </script>
 {% endblock %}

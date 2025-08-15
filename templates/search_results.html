@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Search Results - Ratsit Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Search Results</h1>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Search Form -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form action="{{ url_for('search') }}" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" 
+                               placeholder="Search by name or street address..." 
+                               value="{{ search_term }}">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Results -->
+<div class="row">
+    <div class="col-12">
+        {% if results %}
+        <div class="card">
+            <div class="card-header">
+                <h3>Found {{ results|length }} results for "{{ search_term }}"</h3>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Area</th>
+                                <th>Age</th>
+                                <th>Salary</th>
+                                <th>Capital</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for person in results %}
+                            <tr>
+                                <td><strong>{{ person.name }}</strong></td>
+                                <td>{{ person.address }}</td>
+                                <td>
+                                    <a href="{{ url_for('area_detail', postal_code=person.postal_code) }}" 
+                                       class="text-decoration-none">
+                                        {{ person.area_name }}<br>
+                                        <small class="text-muted">{{ person.postal_code }}</small>
+                                    </a>
+                                </td>
+                                <td>{{ person.age }}</td>
+                                <td class="{% if person.salary > 1000000 %}text-success{% elif person.salary > 500000 %}text-warning{% else %}text-muted{% endif %}">
+                                    {{ "{:,}".format(person.salary) }} SEK
+                                </td>
+                                <td class="{% if person.capital > 0 %}text-success{% elif person.capital < 0 %}text-danger{% else %}text-muted{% endif %}">
+                                    {% if person.capital != 0 %}
+                                        {{ "{:,}".format(person.capital) }} SEK
+                                    {% else %}
+                                        -
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% elif search_term %}
+        <div class="alert alert-info">
+            <h4><i class="fas fa-info-circle"></i> No results found</h4>
+            <p>No persons found matching "{{ search_term }}". Try:</p>
+            <ul>
+                <li>Checking your spelling</li>
+                <li>Using fewer or different keywords</li>
+                <li>Searching for just a first or last name</li>
+                <li>Searching for a street name</li>
+            </ul>
+        </div>
+        {% else %}
+        <div class="alert alert-secondary">
+            <h4><i class="fas fa-search"></i> Enter a search term</h4>
+            <p>Use the search box above to find people by name or street address.</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

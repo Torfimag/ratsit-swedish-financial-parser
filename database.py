@@ -208,6 +208,91 @@ class RatsitDatabase:
         df = pd.read_sql_query(query, conn, params=(limit,))
         conn.close()
         return df
+    
+    def search_persons(self, search_term, limit=50):
+        """Search for persons by name or address"""
+        conn = sqlite3.connect(self.db_path)
+        
+        query = '''
+            SELECT name, address, postal_code, area_name, age, salary, capital
+            FROM persons 
+            WHERE UPPER(name) LIKE UPPER(?) OR UPPER(address) LIKE UPPER(?)
+            ORDER BY salary DESC
+            LIMIT ?
+        '''
+        
+        search_pattern = f'%{search_term}%'
+        df = pd.read_sql_query(query, conn, params=(search_pattern, search_pattern, limit))
+        conn.close()
+        return df
+    
+    def get_top_capital_owners(self, limit=20):
+        """Get top capital owners (highest capital income)"""
+        conn = sqlite3.connect(self.db_path)
+        
+        query = '''
+            SELECT name, area_name, capital, salary
+            FROM persons 
+            WHERE capital > 0
+            ORDER BY capital DESC
+            LIMIT ?
+        '''
+        
+        df = pd.read_sql_query(query, conn, params=(limit,))
+        conn.close()
+        return df
+    
+    def get_loan_distribution_by_age(self):
+        """Get loan distribution by age groups (negative capital = loans)"""
+        conn = sqlite3.connect(self.db_path)
+        
+        query = '''
+            SELECT 
+                CASE 
+                    WHEN age >= 20 AND age <= 29 THEN '20-29'
+                    WHEN age >= 30 AND age <= 39 THEN '30-39'
+                    WHEN age >= 40 AND age <= 49 THEN '40-49'
+                    WHEN age >= 50 AND age <= 59 THEN '50-59'
+                    WHEN age >= 60 AND age <= 69 THEN '60-69'
+                    WHEN age >= 70 THEN '70+'
+                    ELSE 'Under 20'
+                END as age_group,
+                COUNT(*) as total_people,
+                SUM(CASE WHEN capital < 0 THEN 1 ELSE 0 END) as people_with_loans,
+                COALESCE(ROUND(
+                    100.0 * SUM(CASE WHEN capital < 0 THEN 1 ELSE 0 END) / COUNT(*), 1
+                ), 0) as loan_percentage,
+                COALESCE(AVG(CASE WHEN capital < 0 THEN ABS(capital) ELSE NULL END), 0) as avg_loan_amount
+            FROM persons 
+            WHERE age >= 20
+            GROUP BY 
+                CASE 
+                    WHEN age >= 20 AND age <= 29 THEN '20-29'
+                    WHEN age >= 30 AND age <= 39 THEN '30-39'
+                    WHEN age >= 40 AND age <= 49 THEN '40-49'
+                    WHEN age >= 50 AND age <= 59 THEN '50-59'
+                    WHEN age >= 60 AND age <= 69 THEN '60-69'
+                    WHEN age >= 70 THEN '70+'
+                    ELSE 'Under 20'
+                END
+            ORDER BY age_group
+        '''
+        
+        df = pd.read_sql_query(query, conn)
+        conn.close()
+        
+        # Convert to list of dictionaries for JSON serialization
+        result = []
+        for _, row in df.iterrows():
+            result.append({
+                'age_group': row['age_group'],
+                'total_people': int(row['total_people']),
+                'people_with_loans': int(row['people_with_loans']),
+                'loan_percentage': float(row['loan_percentage']) if pd.notna(row['loan_percentage']) else 0.0,
+                'avg_loan_amount': float(row['avg_loan_amount']) if pd.notna(row['avg_loan_amount']) else 0.0
+            })
+        
+        return result
 
 if __name__ == "__main__":
     # Test database functionality
