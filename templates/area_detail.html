@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from 'macros.html' import sort_header %}
 
 {% block title %}{{ stats.area_name }} - Area Details{% endblock %}
 
@@ -86,72 +87,12 @@
                     <table class="table table-striped mb-0">
                         <thead class="table-dark">
                             <tr>
-                                <th>
-                                    <a href="?sort=name&order={{ 'asc' if current_sort == 'name' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-white text-decoration-none">
-                                        Name
-                                        {% if current_sort == 'name' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=address&order={{ 'asc' if current_sort == 'address' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-white text-decoration-none">
-                                        Address
-                                        {% if current_sort == 'address' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=age&order={{ 'asc' if current_sort == 'age' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-white text-decoration-none">
-                                        Age
-                                        {% if current_sort == 'age' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=salary&order={{ 'asc' if current_sort == 'salary' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-white text-decoration-none">
-                                        Salary
-                                        {% if current_sort == 'salary' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=capital&order={{ 'asc' if current_sort == 'capital' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-white text-decoration-none">
-                                        Capital
-                                        {% if current_sort == 'capital' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=rank&order={{ 'asc' if current_sort == 'rank' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-white text-decoration-none">
-                                        Rank
-                                        {% if current_sort == 'rank' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
+                                {{ sort_header('name', 'Name', 'text-white') }}
+                                {{ sort_header('address', 'Address', 'text-white') }}
+                                {{ sort_header('age', 'Age', 'text-white') }}
+                                {{ sort_header('salary', 'Salary', 'text-white') }}
+                                {{ sort_header('capital', 'Capital', 'text-white') }}
+                                {{ sort_header('rank', 'Rank', 'text-white') }}
                                 <th>Year</th>
                             </tr>
                         </thead>

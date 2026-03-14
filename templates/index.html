@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from 'macros.html' import sort_header %}
 
 {% block title %}Stockholm Income Map - Ratsit Analytics{% endblock %}
 
@@ -106,40 +107,10 @@
                     <table class="table table-sm mb-0">
                         <thead class="sticky-top bg-light">
                             <tr>
-                                <th>
-                                    <a href="?sort=name&order={{ 'asc' if current_sort == 'name' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Name
-                                        {% if current_sort == 'name' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
+                                {{ sort_header('name', 'Name') }}
                                 <th>Area</th>
-                                <th>
-                                    <a href="?sort=salary&order={{ 'asc' if current_sort == 'salary' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Salary
-                                        {% if current_sort == 'salary' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=rank&order={{ 'asc' if current_sort == 'rank' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Rank
-                                        {% if current_sort == 'rank' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
+                                {{ sort_header('salary', 'Salary') }}
+                                {{ sort_header('rank', 'Rank') }}
                             </tr>
                         </thead>
                         <tbody>

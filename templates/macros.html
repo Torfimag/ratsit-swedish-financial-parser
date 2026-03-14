@@ -1,0 +1,13 @@
+{% macro sort_header(column_name, display_name, text_class='text-dark') %}
+<th>
+    <a href="?sort={{ column_name }}&order={{ 'asc' if current_sort == column_name and current_order == 'desc' else 'desc' }}"
+       class="{{ text_class }} text-decoration-none">
+        {{ display_name }}
+        {% if current_sort == column_name %}
+            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+        {% else %}
+            <i class="fas fa-sort text-muted"></i>
+        {% endif %}
+    </a>
+</th>
+{% endmacro %}

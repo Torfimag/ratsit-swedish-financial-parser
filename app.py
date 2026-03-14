@@ -46,9 +46,9 @@ def create_stockholm_map(area_data):
         if row['avg_salary'] > 1000000:
             color = 'red'
         elif row['avg_salary'] > 750000:
-            color = 'orange'  
+            color = 'orange'
         elif row['avg_salary'] > 500000:
-            color = 'yellow'
+            color = 'beige'
         else:
             color = 'green'
         
@@ -182,21 +182,14 @@ def api_loan_distribution():
 def capital_rankings():
     """Capital rankings page"""
     db = RatsitDatabase()
-    
-    # Get sorting parameters
+
     sort_by = request.args.get('sort', 'avg_capital')
     sort_order = request.args.get('order', 'desc')
-    
-    # Get capital rankings
-    capital_rankings = db.get_capital_rankings()
-    
-    # Apply client-side sorting if needed
-    if sort_by in capital_rankings.columns:
-        ascending = (sort_order == 'asc')
-        capital_rankings = capital_rankings.sort_values(by=sort_by, ascending=ascending)
-    
-    return render_template('capital_rankings.html', 
-                         capital_rankings=capital_rankings.to_dict('records'),
+
+    rankings = db.get_capital_rankings(sort_by=sort_by, sort_order=sort_order)
+
+    return render_template('capital_rankings.html',
+                         capital_rankings=rankings.to_dict('records'),
                          current_sort=sort_by,
                          current_order=sort_order)
 

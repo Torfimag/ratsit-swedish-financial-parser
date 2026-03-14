@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from 'macros.html' import sort_header %}
 
 {% block title %}Capital Rankings by Area - Ratsit Analytics{% endblock %}
 
@@ -82,72 +83,12 @@
                         <thead class="bg-light sticky-top">
                             <tr>
                                 <th class="text-center">#</th>
-                                <th>
-                                    <a href="?sort=area_name&order={{ 'asc' if current_sort == 'area_name' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Area
-                                        {% if current_sort == 'area_name' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=avg_capital&order={{ 'asc' if current_sort == 'avg_capital' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Avg Capital
-                                        {% if current_sort == 'avg_capital' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=avg_salary&order={{ 'asc' if current_sort == 'avg_salary' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Avg Salary
-                                        {% if current_sort == 'avg_salary' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=person_count&order={{ 'asc' if current_sort == 'person_count' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Population
-                                        {% if current_sort == 'person_count' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=capital_percentage&order={{ 'asc' if current_sort == 'capital_percentage' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Capital Rate
-                                        {% if current_sort == 'capital_percentage' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="?sort=avg_age&order={{ 'asc' if current_sort == 'avg_age' and current_order == 'desc' else 'desc' }}" 
-                                       class="text-dark text-decoration-none">
-                                        Avg Age
-                                        {% if current_sort == 'avg_age' %}
-                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
-                                        {% else %}
-                                            <i class="fas fa-sort text-muted"></i>
-                                        {% endif %}
-                                    </a>
-                                </th>
+                                {{ sort_header('area_name', 'Area') }}
+                                {{ sort_header('avg_capital', 'Avg Capital') }}
+                                {{ sort_header('avg_salary', 'Avg Salary') }}
+                                {{ sort_header('person_count', 'Population') }}
+                                {{ sort_header('capital_percentage', 'Capital Rate') }}
+                                {{ sort_header('avg_age', 'Avg Age') }}
                                 <th class="text-center">Details</th>
                             </tr>
                         </thead>
