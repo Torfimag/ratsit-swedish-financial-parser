@@ -293,6 +293,33 @@ class RatsitDatabase:
             })
         
         return result
+    
+    def get_capital_rankings(self):
+        """Get areas ranked by average capital income"""
+        conn = sqlite3.connect(self.db_path)
+        
+        query = '''
+            SELECT 
+                postal_code,
+                area_name,
+                COUNT(*) as person_count,
+                CAST(AVG(salary) AS INTEGER) as avg_salary,
+                CAST(AVG(capital) AS INTEGER) as avg_capital,
+                CAST(AVG(age) AS INTEGER) as avg_age,
+                SUM(CASE WHEN capital > 0 THEN 1 ELSE 0 END) as people_with_capital,
+                SUM(CASE WHEN capital < 0 THEN 1 ELSE 0 END) as people_with_loans,
+                COALESCE(ROUND(
+                    100.0 * SUM(CASE WHEN capital > 0 THEN 1 ELSE 0 END) / COUNT(*), 1
+                ), 0) as capital_percentage
+            FROM persons 
+            GROUP BY postal_code, area_name
+            HAVING COUNT(*) >= 5  -- Only include areas with at least 5 people for statistical relevance
+            ORDER BY avg_capital DESC, person_count DESC
+        '''
+        
+        df = pd.read_sql_query(query, conn)
+        conn.close()
+        return df
 
 if __name__ == "__main__":
     # Test database functionality

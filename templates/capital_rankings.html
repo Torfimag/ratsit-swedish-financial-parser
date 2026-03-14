@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+
+{% block title %}Capital Rankings by Area - Ratsit Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1><i class="fas fa-chart-line"></i> Capital Rankings by Area</h1>
+                <p class="lead text-muted">Areas ranked by average capital income (investments, savings, assets)</p>
+            </div>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Summary Statistics -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card text-center bg-light">
+            <div class="card-body">
+                <h5 class="card-title text-success">{{ capital_rankings|length }}</h5>
+                <p class="card-text">Areas Analyzed</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center bg-light">
+            <div class="card-body">
+                <h5 class="card-title text-info">
+                    {% set positive_areas = capital_rankings | selectattr('avg_capital', 'gt', 0) | list %}
+                    {{ positive_areas|length }}
+                </h5>
+                <p class="card-text">Areas with Positive Capital</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center bg-light">
+            <div class="card-body">
+                <h5 class="card-title text-warning">
+                    {% if capital_rankings %}
+                        {{ "{:,}".format(capital_rankings[0].avg_capital) }} SEK
+                    {% else %}
+                        0 SEK
+                    {% endif %}
+                </h5>
+                <p class="card-text">Highest Avg Capital</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center bg-light">
+            <div class="card-body">
+                <h5 class="card-title text-primary">
+                    {% if capital_rankings %}
+                        {{ capital_rankings[0].area_name }}
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </h5>
+                <p class="card-text">Top Area</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Capital Rankings Table -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-trophy"></i> Area Capital Rankings</h3>
+                <small class="text-muted">Click column headers to sort • Areas with at least 5 residents</small>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="bg-light sticky-top">
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th>
+                                    <a href="?sort=area_name&order={{ 'asc' if current_sort == 'area_name' and current_order == 'desc' else 'desc' }}" 
+                                       class="text-dark text-decoration-none">
+                                        Area
+                                        {% if current_sort == 'area_name' %}
+                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+                                        {% else %}
+                                            <i class="fas fa-sort text-muted"></i>
+                                        {% endif %}
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="?sort=avg_capital&order={{ 'asc' if current_sort == 'avg_capital' and current_order == 'desc' else 'desc' }}" 
+                                       class="text-dark text-decoration-none">
+                                        Avg Capital
+                                        {% if current_sort == 'avg_capital' %}
+                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+                                        {% else %}
+                                            <i class="fas fa-sort text-muted"></i>
+                                        {% endif %}
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="?sort=avg_salary&order={{ 'asc' if current_sort == 'avg_salary' and current_order == 'desc' else 'desc' }}" 
+                                       class="text-dark text-decoration-none">
+                                        Avg Salary
+                                        {% if current_sort == 'avg_salary' %}
+                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+                                        {% else %}
+                                            <i class="fas fa-sort text-muted"></i>
+                                        {% endif %}
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="?sort=person_count&order={{ 'asc' if current_sort == 'person_count' and current_order == 'desc' else 'desc' }}" 
+                                       class="text-dark text-decoration-none">
+                                        Population
+                                        {% if current_sort == 'person_count' %}
+                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+                                        {% else %}
+                                            <i class="fas fa-sort text-muted"></i>
+                                        {% endif %}
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="?sort=capital_percentage&order={{ 'asc' if current_sort == 'capital_percentage' and current_order == 'desc' else 'desc' }}" 
+                                       class="text-dark text-decoration-none">
+                                        Capital Rate
+                                        {% if current_sort == 'capital_percentage' %}
+                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+                                        {% else %}
+                                            <i class="fas fa-sort text-muted"></i>
+                                        {% endif %}
+                                    </a>
+                                </th>
+                                <th>
+                                    <a href="?sort=avg_age&order={{ 'asc' if current_sort == 'avg_age' and current_order == 'desc' else 'desc' }}" 
+                                       class="text-dark text-decoration-none">
+                                        Avg Age
+                                        {% if current_sort == 'avg_age' %}
+                                            <i class="fas fa-sort-{{ 'down' if current_order == 'desc' else 'up' }}"></i>
+                                        {% else %}
+                                            <i class="fas fa-sort text-muted"></i>
+                                        {% endif %}
+                                    </a>
+                                </th>
+                                <th class="text-center">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for area in capital_rankings %}
+                            <tr class="{% if loop.index <= 3 %}table-success{% elif area.avg_capital < 0 %}table-warning{% endif %}">
+                                <td class="text-center">
+                                    {% if loop.index <= 3 %}
+                                        <i class="fas fa-trophy text-warning"></i>
+                                    {% endif %}
+                                    {{ loop.index }}
+                                </td>
+                                <td>
+                                    <strong>{{ area.area_name }}</strong><br>
+                                    <small class="text-muted">{{ area.postal_code }}</small>
+                                </td>
+                                <td class="{% if area.avg_capital > 100000 %}text-success{% elif area.avg_capital > 0 %}text-info{% elif area.avg_capital < 0 %}text-danger{% else %}text-muted{% endif %}">
+                                    <strong>{{ "{:,}".format(area.avg_capital) }}</strong> SEK
+                                    {% if area.avg_capital > 0 %}
+                                        <i class="fas fa-arrow-up text-success"></i>
+                                    {% elif area.avg_capital < 0 %}
+                                        <i class="fas fa-arrow-down text-danger"></i>
+                                    {% endif %}
+                                </td>
+                                <td class="{% if area.avg_salary > 1000000 %}text-success{% elif area.avg_salary > 500000 %}text-warning{% else %}text-muted{% endif %}">
+                                    {{ "{:,}".format(area.avg_salary) }} SEK
+                                </td>
+                                <td>
+                                    <span class="badge bg-primary">{{ area.person_count }}</span> people
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column">
+                                        <small class="text-success">
+                                            <i class="fas fa-plus-circle"></i> {{ area.people_with_capital }} with capital ({{ area.capital_percentage }}%)
+                                        </small>
+                                        <small class="text-danger">
+                                            <i class="fas fa-minus-circle"></i> {{ area.people_with_loans }} with loans
+                                        </small>
+                                    </div>
+                                </td>
+                                <td class="text-center">{{ area.avg_age }} years</td>
+                                <td class="text-center">
+                                    <a href="{{ url_for('area_detail', postal_code=area.postal_code) }}" 
+                                       class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i> View
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Legend -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h6><i class="fas fa-info-circle"></i> Legend</h6>
+                <div class="row">
+                    <div class="col-md-3">
+                        <small><i class="fas fa-trophy text-warning"></i> <strong>Top 3 Areas</strong> - Highest average capital</small>
+                    </div>
+                    <div class="col-md-3">
+                        <small><span class="text-success">Green</span> - High capital (>100k SEK)</small>
+                    </div>
+                    <div class="col-md-3">
+                        <small><span class="text-danger">Red</span> - Negative capital (net loans)</small>
+                    </div>
+                    <div class="col-md-3">
+                        <small><strong>Capital Rate</strong> - % of residents with positive capital</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

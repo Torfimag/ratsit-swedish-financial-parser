@@ -95,6 +95,18 @@ All notable changes to this project will be documented in this file.
 
 ## Development Log
 
+### 2025-01-16 00:45 UTC - Capital Rankings by Area Feature Added
+- **Added**: Comprehensive capital rankings page analyzing 18 Stockholm areas
+- **Added**: Advanced database method `get_capital_rankings()` with statistical filtering (min 5 residents)
+- **Added**: Multi-metric analysis including avg capital, salary, population, age, and capital ownership rates
+- **Added**: Sortable table with all metrics and visual indicators for top/bottom performers
+- **Added**: Navigation integration in navbar and dashboard with dedicated button
+- **Enhanced**: Area analysis showing both wealth and debt patterns across Stockholm
+- **Key Insights**: Bromma leads with 107k SEK avg capital, 6 areas have negative capital
+- **Files**: Added `templates/capital_rankings.html`, updated `database.py`, `app.py`, `templates/base.html`, `templates/index.html`
+- **Documentation**: Created comprehensive `README_CAPITAL_RANKINGS.md` with feature overview
+- **Status**: ✅ Full capital analysis feature implemented and functional
+
 ### 2025-01-16 00:35 UTC - Dashboard UI Features Restored
 - **Added**: Search functionality for names and street addresses with case-insensitive matching
 - **Added**: Top 20 capital owners list with highest capital income
